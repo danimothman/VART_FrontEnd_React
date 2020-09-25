@@ -13,7 +13,7 @@ import registerStudent from './pages/registerStudent';
 import registerTutor from './pages/registerTutor';
 import FindTutor from './pages/FindTutor';
 import FindStudent from './pages/FindStudent';
-
+import Test from './pages/Test';
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
       <Route path="/registerTutor" component={registerTutor} />
       <Route exact path="/FindTutor" component={FindTutor} />
       <Route exact path="/FindStudent" component={FindStudent} />
-
+      <Route exact path="/Test" component={Test} />
 
     </div>
   )

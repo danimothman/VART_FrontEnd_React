@@ -32,6 +32,12 @@ const MainPage = ({ history }) => {
           학생 로그인
         </Button>
 
+        <Button variant="info" size="lg" onClick={() => {
+          history.push('/Test')
+        }}>
+          Test
+        </Button>
+
       </header>
     </div>
 
