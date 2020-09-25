@@ -5,7 +5,6 @@ import '../App.css';
 import logo from '../logo.svg';
 // import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
-
 import { Button } from 'react-bootstrap';
 
 
@@ -37,7 +36,7 @@ const Test = ({ history }) => {
                         <div class="itemFounder">Sergey Nazarov</div>
                         <div class="itemLocation">
                             Strathvale House, 90 North Church Street, George Town, KY1-1102, Grand Cayman, Cayman Islands
-                    </div>
+                        </div>
                         <div class="itemCorporateJurisdiction">케이맨섬</div>
                         <div class="itemVirtualAssetName">Chainlink</div>
                         <div class="itemVirtualAssetLog">Chainlink(Log)</div>
