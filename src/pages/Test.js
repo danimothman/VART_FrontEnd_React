@@ -6,11 +6,12 @@ import logo from '../logo.svg';
 // import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
 import { Button } from 'react-bootstrap';
-
+// import HelloScreen from '../screens/HelloScreen'
+import CounterScreen, {  } from '../screens/CounterScreen'
+import UserScreen1 from '../screens/UserScreen'
 
 const Test = ({ history }) => {
     return (
-
         <div className="App">
             <header className="App-header">
 
@@ -20,7 +21,9 @@ const Test = ({ history }) => {
                 <br></br>
                 <img src={logo} className="App-logo" alt="logo" />
                 <br></br>
-
+                {/* <HelloScreen /> */}
+                <CounterScreen />
+                <UserScreen1 />
                 <div>
                     <div >
                         <div class="itemCompanyCursor">회사이름</div>
@@ -43,11 +46,6 @@ const Test = ({ history }) => {
                         <div class="itemDeveloper">Steve Ellis</div>
                     </div>
                 </div>
-
-
-
-
-
             </header>
         </div>
 

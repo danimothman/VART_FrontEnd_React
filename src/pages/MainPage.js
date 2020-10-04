@@ -14,24 +14,9 @@ const MainPage = ({ history }) => {
     <div className="App">
       <header className="App-header">
         <h1>
-          React를 활용한 과외매칭DApp입니다
+          React를 활용한 VART 입니다
         </h1>
-        <br></br>
-        <img src={logo} className="App-logo" alt="logo" />
-        <br></br>
 
-        <Button variant="info" size="lg" active onClick={() => {
-          history.push('/TutorLogin')
-        }}>
-          선생님 로그인
-        </Button>
-        <br></br>
-
-        <Button variant="info" size="lg" onClick={() => {
-          history.push('/StudentLogin')
-        }}>
-          학생 로그인
-        </Button>
 
         <Button variant="info" size="lg" onClick={() => {
           history.push('/Test')
@@ -46,3 +31,5 @@ const MainPage = ({ history }) => {
 }
 
 export default MainPage;
+
+
