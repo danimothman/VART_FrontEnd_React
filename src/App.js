@@ -14,8 +14,8 @@ import registerTutor from './pages/registerTutor';
 import FindTutor from './pages/FindTutor';
 import FindStudent from './pages/FindStudent';
 import Test from './pages/Test';
-
-const App = () => {
+import projectItem from './pages/projectItem';
+const App = () => {//projectItem
   return (
     <div>
       <Route exact path="/" component={MainPage} />
@@ -30,7 +30,7 @@ const App = () => {
       <Route exact path="/FindTutor" component={FindTutor} />
       <Route exact path="/FindStudent" component={FindStudent} />
       <Route exact path="/Test" component={Test} />
-
+      <Route exact path="/projectItem" component={projectItem} />
     </div>
   )
 }

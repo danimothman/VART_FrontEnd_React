@@ -18,18 +18,10 @@ const MainPage = ({ history }) => {
         <br></br>
         <img src={logo} className="App-logo" alt="logo" />
         <br></br>
-
-        <Button variant="info" size="lg" active onClick={() => {
-          history.push('/TutorLogin')
-        }}>
-          선생님 로그인
-        </Button>
-        <br></br>
-
         <Button variant="info" size="lg" onClick={() => {
-          history.push('/StudentLogin')
+          history.push('/projectItem')
         }}>
-          학생 로그인
+          projectItem
         </Button>
 
         <Button variant="info" size="lg" onClick={() => {
