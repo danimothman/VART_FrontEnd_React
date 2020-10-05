@@ -10,7 +10,6 @@ import { Button } from 'react-bootstrap';
 
 const MainPage = ({ history }) => {
   return (
-
     <div className="App">
       <header className="App-header">
         <h1>
