@@ -14,26 +14,26 @@ var User = ({ user, onToggle, onRemove }) => {
         <li Key={user.id}><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>
             {user.username} : </b>
             <span> {user.email}</span>
-            <span> {user.tokenlogo}</span>
-            <span> {user.tokenname}</span>
-            <span> {user.projecttype}</span>
-            <span> {user.companyname}</span>
-            <span> {user.companyestablishment}</span>
-            <span> {user.companylocation}</span>
-            <span> {user.statejurisdiction}</span>
-            <span> {user.membername}</span>
-            <span> {user.membereducation}</span>
-            <span> {user.memberexperience}</span>
-            <span> {user.developerleadername}</span>
-            <span> {user.developerleadereducation}</span>
-            <span> {user.developerleaderexperience}</span>
-            <span> {user.mkname}</span>
-            <span> {user.mklocation}</span>
-            <span> {user.mkcpdate}</span>
-            <span> {user.mkfounder}</span>
-            <span> {user.milestone}</span>
-            <span> {user.movenum}</span>
-            <span> {user.mywallet}</span>
+            <span> {user.tokenLogo}</span>
+            <span> {user.tokenName}</span>
+            <span> {user.projectType}</span>
+            <span> {user.companyName}</span>
+            <span> {user.companyEstablishment}</span>
+            <span> {user.companyLocation}</span>
+            <span> {user.stateJurisdiction}</span>
+            <span> {user.memberName}</span>
+            <span> {user.memberEducation}</span>
+            <span> {user.memberExperience}</span>
+            <span> {user.developerLeaderName}</span>
+            <span> {user.developerLeaderEducation}</span>
+            <span> {user.developerLeaderExperience}</span>
+            <span> {user.mkName}</span>
+            <span> {user.mkLocation}</span>
+            <span> {user.mkCpdate}</span>
+            <span> {user.mkFounder}</span>
+            <span> {user.mileStone}</span>
+            <span> {user.moveNum}</span>
+            <span> {user.myWallet}</span>
             <button onClick={() => onRemove(user.id)} >삭제</button>
         </li>
 

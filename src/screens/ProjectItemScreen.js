@@ -2,7 +2,9 @@ import React, { useState, useMemo, useCallback, useRef } from 'react'
 
 //회사 가짜 데이터 공시정보 입력경로
 import { CompanyData } from './../data/companyData'
+//공시 정보 리스트 출력 경로
 import BasicInfoList from '../components/BasicInfoList'
+//공시정보 작성 경로
 import CreateCompanyUser from '../components/CreateCompanyUser'
 
 function ProjectItemScreen() {
@@ -15,35 +17,35 @@ function ProjectItemScreen() {
     const [inputs, setInputs] = useState({
         username: '',
         email: '',
-        tokenlogo: '',
-        tokenname: '',
-        projecttype: '',
-        companyname: '',
-        companyestablishment: '',
-        companylocation: '',
-        statejurisdiction: '',
-        membername: '',
-        membereducation: '',
-        memberexperience: '',
-        developerleadername: '',
-        developerleadereducation: '',
-        developerleaderexperience: '',
-        mkname: '',
-        mklocation: '',
-        mkcpdate: '',
-        mkfounder: '',
-        milestone: '',
-        movenum: '',
-        mywallet: ''
+        tokenLogo: '',
+        tokenName: '',
+        projectType: '',
+        companyName: '',
+        companyEstablishment: '',
+        companyLocation: '',
+        stateJurisdiction: '',
+        memberName: '',
+        memberEducation: '',
+        memberExperience: '',
+        developerLeaderName: '',
+        developerLeaderEducation: '',
+        developerLeaderExperience: '',
+        mkName: '',
+        mkLocation: '',
+        mkCpdate: '',
+        mkFounder: '',
+        mileStone: '',
+        moveNum: '',
+        myWallet: ''
     })
 
     const { username, email,
-        tokenlogo, tokenname, projecttype,
-        companyname, companyestablishment, companylocation, statejurisdiction,
-        membername, membereducation, memberexperience,
-        developerleadername, developerleadereducation, developerleaderexperience,
-        mkname, mklocation, mkcpdate, mkfounder,
-        milestone, movenum, mywallet
+        tokenLogo, tokenName, projectType,
+        companyName, companyEstablishment, companyLocation, stateJurisdiction,
+        memberName, memberEducation, memberExperience,
+        developerLeaderName, developerLeaderEducation, developerLeaderExperience,
+        mkName, mkLocation, mkCpdate, mkFounder,
+        mileStone, moveNum, myWallet
     } = inputs
     const nextId = useRef(4)
 
@@ -56,17 +58,18 @@ function ProjectItemScreen() {
         });
     }
     //useCallback 함수를 지우고 쓰는 기능(※[비권장]해당하는 방법은 메모리를 지우고 다시 쓰는 방식으로 진행되서 메모리 효율이 좋은 편이 아님)
-    const onCreate = useCallback(() => {
+    const onCreate = useCallback((e) => {
+        e.preventDefault();
         const user = {
             id: nextId.current,
             username,
             email,
-            tokenlogo, tokenname, projecttype,
-            companyname, companyestablishment, companylocation, statejurisdiction,
-            membername, membereducation, memberexperience,
-            developerleadername, developerleadereducation, developerleaderexperience,
-            mkname, mklocation, mkcpdate, mkfounder,
-            milestone, movenum, mywallet
+            tokenLogo, tokenName, projectType,
+            companyName, companyEstablishment, companyLocation, stateJurisdiction,
+            memberName, memberEducation, memberExperience,
+            developerLeaderName, developerLeaderEducation, developerLeaderExperience,
+            mkName, mkLocation, mkCpdate, mkFounder,
+            mileStone, moveNum, myWallet
         }
         setUsers([...users, user])
 
@@ -74,26 +77,26 @@ function ProjectItemScreen() {
         setInputs({
             username: '',
             email: '',
-            tokenlogo: '',
-            tokenname: '',
-            projecttype: '',
-            companyname: '',
-            companyestablishment: '',
-            companylocation: '',
-            statejurisdiction: '',
-            membername: '',
-            membereducation: '',
-            memberexperience: '',
-            developerleadername: '',
-            developerleadereducation: '',
-            developerleaderexperience: '',
-            mkname: '',
-            mklocation: '',
-            mkcpdate: '',
-            mkfounder: '',
-            milestone: '',
-            movenum: '',
-            mywallet: ''
+            tokenLogo: '',
+            tokenName: '',
+            projectType: '',
+            companyName: '',
+            companyEstablishment: '',
+            companyLocation: '',
+            stateJurisdiction: '',
+            memberName: '',
+            memberEducation: '',
+            memberExperience: '',
+            developerLeaderName: '',
+            developerLeaderEducation: '',
+            developerLeaderExperience: '',
+            mkName: '',
+            mkLocation: '',
+            mkCpdate: '',
+            mkFounder: '',
+            mileStone: '',
+            moveNum: '',
+            myWallet: ''
         })
         nextId.current += 1
     }, [users, inputs])
@@ -115,12 +118,12 @@ function ProjectItemScreen() {
         <div>
             <CreateCompanyUser
                 user={username} useremail={email}
-                // tokenlogo={tokenlogo} tokenname={tokenname} projecttype={projecttype}
-                // companyname={companyname} companyestablishment={companyestablishment} companylocation={companyestablishment} statejurisdiction={statejurisdiction}
-                // membername={membername} membereducation={membereducation} memberexperience={memberexperience}
-                // developerleadername={developerleadername} developerleadereducation={developerleadereducation} developerleaderexperience={developerleaderexperience}
-                // mkname={mkname} mklocation={mklocation} mkcpdate={mkcpdate} mkfounder={mkfounder}
-                // milestone={milestone} movenum={movenum} mywallet={mywallet}
+                tokenlogo={tokenLogo} tokenname={tokenName} projecttype={projectType}
+                companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyEstablishment} statejurisdiction={stateJurisdiction}
+                membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
+                developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
+                mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
+                milestone={mileStone} movenum={moveNum} mywallet={myWallet}
                 onChange={onChangeInput} onCreate={onCreate} />
             <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
             <div>활성자 수 : {count}</div>

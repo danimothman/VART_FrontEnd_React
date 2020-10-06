@@ -2,12 +2,12 @@ import React from 'react'
 
 function CreateCompanyUser({
     user, useremail,
-    tokenLogo, tokenName, projectType,
-    companyName, companyEstablishment, companyLocation, stateJurisdiction,
-    memberName, memberEducation, memberExperience,
-    developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-    mkName, mkLocation, mkCpdate, mkFounder,
-    mileStone, moveNum, myWallet,
+    tokenlogo, tokenname, projecttype,
+    companyname, companyestablishment, companylocation, statejurisdiction,
+    membername, membereducation, memberexperience,
+    developerleadername, developerleadereducation, developerleaderexperience,
+    mkname, mklocation, mkcpdate, mkfounder,
+    milestone, movenum, mywallet,
     onChange, onCreate
 }) {
     return (
@@ -34,22 +34,22 @@ function CreateCompanyUser({
                 <div>
                     <label>토큰정보</label>
                     <input
-                        name="tokenlogo"
+                        name="tokenLogo"
                         placeholder="토큰 로고"
                         onChange={onChange}
-                        value={tokenLogo}
+                        value={tokenlogo}
                     />
                     <input
-                        name="tokenname"
+                        name="tokenName"
                         placeholder="토큰 이름"
                         onChange={onChange}
-                        value={tokenName}
+                        value={tokenname}
                     />
                     <input
-                        name="projecttype"
+                        name="projectType"
                         placeholder="프로젝트 종류"
                         onChange={onChange}
-                        value={projectType}
+                        value={projecttype}
                     />
                 </div>
 
@@ -57,28 +57,28 @@ function CreateCompanyUser({
                 <div>
                     <label>공시정보</label>
                     <input
-                        name="companyname"
+                        name="companyName"
                         placeholder="회사이름"
                         onChange={onChange}
-                        value={companyName}
+                        value={companyname}
                     />
                     <input
-                        name="companyestablishment"
+                        name="companyEstablishment"
                         placeholder="회사 설립일"
                         onChange={onChange}
-                        value={companyEstablishment}
+                        value={companyestablishment}
                     />
                     <input
-                        name="companylocation"
+                        name="companyLocation"
                         placeholder="회사 위치"
                         onChange={onChange}
-                        value={companyLocation}
+                        value={companylocation}
                     />
                     <input
-                        name="statejurisdiction"
+                        name="stateJurisdiction"
                         placeholder="법인 관할자(Corporate jurisdiction) 위치"
                         onChange={onChange}
-                        value={stateJurisdiction}
+                        value={statejurisdiction}
                     />
                 </div>
 
@@ -86,22 +86,22 @@ function CreateCompanyUser({
                 <div>
                     <label>경영진</label>
                     <input
-                        name="membername"
+                        name="memberName"
                         placeholder="경영진 이름"
                         onChange={onChange}
-                        value={memberName}
+                        value={membername}
                     />
                     <input
-                        name="membereducation"
+                        name="memberEducation"
                         placeholder="경영진 학력"
                         onChange={onChange}
-                        value={memberEducation}
+                        value={membereducation}
                     />
                     <input
-                        name="memberexperience"
+                        name="memberExperience"
                         placeholder="경영진 경력"
                         onChange={onChange}
-                        value={memberExperience}
+                        value={memberexperience}
                     />
                 </div>
 
@@ -109,22 +109,22 @@ function CreateCompanyUser({
                 <div>
                     <label>개발자리더</label>
                     <input
-                        name="developerleadername"
+                        name="developerLeaderName"
                         placeholder="개발자 이름"
                         onChange={onChange}
-                        value={developerLeaderName}
+                        value={developerleadername}
                     />
                     <input
-                        name="developerleadereducation"
+                        name="developerLeaderEducation"
                         placeholder="개발자 학력"
                         onChange={onChange}
-                        value={developerLeaderEducation}
+                        value={developerleadereducation}
                     />
                     <input
-                        name="developerleaderexperience"
+                        name="developerLeaderExperience"
                         placeholder="개발자 경력"
                         onChange={onChange}
-                        value={developerLeaderExperience}
+                        value={developerleaderexperience}
                     />
                 </div>
 
@@ -132,28 +132,28 @@ function CreateCompanyUser({
                 <div>
                     <label>Onchain</label>
                     <input
-                        name="mkname"
+                        name="mkName"
                         placeholder="마켓 이름"
                         onChange={onChange}
-                        value={mkName}
+                        value={mkname}
                     />
                     <input
-                        name="mklocation"
+                        name="mkLocation"
                         placeholder="마켓 위치"
                         onChange={onChange}
-                        value={mkLocation}
+                        value={mklocation}
                     />
                     <input
-                        name="mkcpdate"
+                        name="mkCpdate"
                         placeholder="마켓 cpdate"
                         onChange={onChange}
-                        value={mkCpdate}
+                        value={mkcpdate}
                     />
                     <input
-                        name="mkfounder"
+                        name="mkFounder"
                         placeholder="마켓 설립자"
                         onChange={onChange}
-                        value={mkFounder}
+                        value={mkfounder}
                     />
                 </div>
 
@@ -161,28 +161,29 @@ function CreateCompanyUser({
                 <div>
                     <label>계정정보</label>
                     <input
-                        name="milestone"
+                        name="mileStone"
                         placeholder="milestone"
                         onChange={onChange}
-                        value={mileStone}
+                        value={milestone}
                     />
                     <input
-                        name="movenum"
+                        name="moveNum"
                         placeholder="movenum"
                         onChange={onChange}
-                        value={moveNum}
+                        value={movenum}
                     />
                     <input
-                        name="mywallet"
+                        name="myWallet"
                         placeholder="wallet"
                         onChange={onChange}
-                        value={myWallet}
+                        value={mywallet}
                     />
                 </div>
 
                 <br></br>
+                <button onClick={onCreate} >공시 정보 등록</button>
             </form>
-            <button onClick={onCreate} >공시 정보 등록</button>
+            {/* <button onClick={onCreate} >공시 정보 등록</button> */}
         </div>
     )
 }
