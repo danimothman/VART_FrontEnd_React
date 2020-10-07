@@ -1,18 +1,17 @@
 import React, { useState, useMemo, useCallback, useRef } from 'react'
-
+import '../App.css';
+import logo from '../logo.svg';
+import { Button } from 'react-bootstrap';
+import Partials from './partials/Partials'
 //회사 가짜 데이터 공시정보 입력경로
 import { CompanyData } from './../data/companyData'
-//공시 정보 리스트 출력 경로
-import BasicInfoList from '../components/BasicInfoList'
 //공시정보 작성 경로
 import CreateCompanyUser from '../components/CreateCompanyUser'
 
-function ProjectItemScreen() {
-    const countActiveUsers = (users) => {
-        console.log('활성화 사용자 수를 체크 하는 중')
-        return users.filter(user => user.active).length;
-    }
+
+const ProjectItemCreate = ({ history }) => {
     const [users, setUsers] = useState(CompanyData)
+
 
     const [inputs, setInputs] = useState({
         username: '',
@@ -100,7 +99,7 @@ function ProjectItemScreen() {
             // moveNum: '',
             // myWallet: ''
         })
-        //==========JSON변환 코드s==========
+
         const data = {
             basicinfo: {
                 companyname: companyName,
@@ -122,47 +121,59 @@ function ProjectItemScreen() {
                 education: developerLeaderEducation,
                 experience: developerLeaderExperience
             }
-
         }
         fetch('https://localhost.com', {
             method: 'POST',
             body: JSON.stringify(data)
         })
-        //==========JSON변환 코드e==========
+        // "infoKey":"Publicinfo4",
+        // basicinfo: {
+        //   companyname: "",
+        //   establishment: "",
+        //   location: "",
+        //   statejurisdiction:"", 
+        // },
+        // tokenprofile: {
+        //   tokenname: "",
+        //   projecttype:"", 
+        // },
+        // executives: {
+        //   name: "",
+        //   education: "",
+        //   experience: "",
+        // },
+        // developerleaders: {
+        //   name: "",
+        //   education: "",
+        //   experience: "",
+
         nextId.current += 1
 
 
     }, [users, inputs])
-    // 삭제 함수
-    const onRemove = (id) => {
-        console.log("delete")
-        setUsers(users.filter(user => user.id !== id))
-        console.log(users)
-    }
-    // 아이디 토글 함수
-    const onToggleFunc = useCallback((id) => {
-        setUsers(users.map(
-            user => user.id === id ? { ...user, active: !user.active } : user
-        ))
-    }, [users])
 
-    const count = useMemo(() => countActiveUsers(users), [users])
     return (
-        <div>
-            <CreateCompanyUser
-                user={username} useremail={email}
-                // tokenlogo={tokenLogo} 
-                tokenname={tokenName} projecttype={projectType}
-                companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyEstablishment} statejurisdiction={stateJurisdiction}
-                membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
-                developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
-                // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
-                // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
-                onChange={onChangeInput} onCreate={onCreate} />
-            <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
-            <div>활성자 수 : {count}</div>
+
+        <div className="App">
+            <Partials />
+            <header className="App-header">
+                <div>
+                    공시등록
+                </div>
+                <CreateCompanyUser
+                    user={username} useremail={email}
+                    // tokenlogo={tokenLogo} 
+                    tokenname={tokenName} projecttype={projectType}
+                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyEstablishment} statejurisdiction={stateJurisdiction}
+                    membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
+                    developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
+                    // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
+                    // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
+                    onChange={onChangeInput} onCreate={onCreate} />
+            </header>
         </div>
-    )
+
+    );
 }
 
-export default ProjectItemScreen;
+export default ProjectItemCreate;

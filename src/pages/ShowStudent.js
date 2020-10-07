@@ -85,8 +85,8 @@ class ShowStudent extends Component {
                                 </ul>
 
                                 <ul className="nav navbar-nav navbar-right">
-                                <li><a><strong>{sessionStorage.getItem('account')}</strong>님 반갑습니다!</a></li>
-                                <li><a href="/logout">로그아웃</a></li>
+                                    <li><a><strong>{sessionStorage.getItem('account')}</strong>님 반갑습니다!</a></li>
+                                    <li><a href="/logout">로그아웃</a></li>
                                 </ul>
 
                             </div>
@@ -99,45 +99,42 @@ class ShowStudent extends Component {
                         <h2>학생 리스트</h2>
                     </div>
 
-                    
-                        {this.state.studentArray.map(students => (
-                            <div class="col-lg-4">
+                    {this.state.studentArray.map(students => (
+                        <div class="col-lg-4">
 
-                                <div class="card">
+                            <div class="card">
 
-
-
-                                    <div class="card-image"></div>
-                                    <div class="card-title">학생 이름 : {students[0]}</div>
-                                    <div class="card-comment">성별 : {students[1]}</div>
-                                    <div class="card-comment">나이 : {students[2]}</div>
-                                    <div class="card-comment">거주지 : {students[3]}</div>
-                                    <div class="card-comment">희망과목 : {students[4]}</div>
-                                    
-
-                                    <hr></hr>
+                                <div class="card-image"></div>
+                                <div class="card-title">학생 이름 : {students[0]}</div>
+                                <div class="card-comment">성별 : {students[1]}</div>
+                                <div class="card-comment">나이 : {students[2]}</div>
+                                <div class="card-comment">거주지 : {students[3]}</div>
+                                <div class="card-comment">희망과목 : {students[4]}</div>
 
 
-                                    <button class="btn btn-info newapply-btn" onClick={()=>{
-                                        storehash.methods.getStudentResume(students[5]).send({
-                                            from: sessionStorage.getItem('account'),
-                                            value: web3.utils.toWei('5', "ether"),
-                                        }).then((result)=>{
-                                            console.log(result);
-                                            window.location.href="http://gateway.ipfs.io/ipfs/"+`${students[5]}`;
-                                        })
-                                        
-                                    }} >학생 이력서 다운로드</button>
-                                </div>
+                                <hr></hr>
 
 
+                                <button class="btn btn-info newapply-btn" onClick={() => {
+                                    storehash.methods.getStudentResume(students[5]).send({
+                                        from: sessionStorage.getItem('account'),
+                                        value: web3.utils.toWei('5', "ether"),
+                                    }).then((result) => {
+                                        console.log(result);
+                                        window.location.href = "http://gateway.ipfs.io/ipfs/" + `${students[5]}`;
+                                    })
 
+                                }} >학생 이력서 다운로드</button>
                             </div>
-                        ))}
 
 
 
-                   
+                        </div>
+                    ))}
+
+
+
+
                 </div>
             </div>
         )

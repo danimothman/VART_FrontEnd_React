@@ -2,12 +2,13 @@ import React from 'react'
 
 function CreateCompanyUser({
     user, useremail,
-    tokenlogo, tokenname, projecttype,
+    // tokenlogo, 
+    tokenname, projecttype,
     companyname, companyestablishment, companylocation, statejurisdiction,
     membername, membereducation, memberexperience,
     developerleadername, developerleadereducation, developerleaderexperience,
-    mkname, mklocation, mkcpdate, mkfounder,
-    milestone, movenum, mywallet,
+    // mkname, mklocation, mkcpdate, mkfounder,
+    // milestone, movenum, mywallet,
     onChange, onCreate
 }) {
     return (
@@ -33,12 +34,12 @@ function CreateCompanyUser({
                 <br></br>
                 <div>
                     <label>토큰정보</label>
-                    <input
+                    {/* <input
                         name="tokenLogo"
                         placeholder="토큰 로고"
                         onChange={onChange}
                         value={tokenlogo}
-                    />
+                    /> */}
                     <input
                         name="tokenName"
                         placeholder="토큰 이름"
@@ -128,7 +129,7 @@ function CreateCompanyUser({
                     />
                 </div>
 
-                <br></br>
+                {/* <br></br>
                 <div>
                     <label>Onchain</label>
                     <input
@@ -178,7 +179,7 @@ function CreateCompanyUser({
                         onChange={onChange}
                         value={mywallet}
                     />
-                </div>
+                </div> */}
 
                 <br></br>
                 <button onClick={onCreate} >공시 정보 등록</button>

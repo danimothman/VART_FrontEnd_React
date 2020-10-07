@@ -14,7 +14,7 @@ var User = ({ user, onToggle, onRemove }) => {
         <li Key={user.id}><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>
             {user.username} : </b>
             <span> {user.email}</span>
-            <span> {user.tokenLogo}</span>
+            {/* <span> {user.tokenLogo}</span> */}
             <span> {user.tokenName}</span>
             <span> {user.projectType}</span>
             <span> {user.companyName}</span>
@@ -27,13 +27,13 @@ var User = ({ user, onToggle, onRemove }) => {
             <span> {user.developerLeaderName}</span>
             <span> {user.developerLeaderEducation}</span>
             <span> {user.developerLeaderExperience}</span>
-            <span> {user.mkName}</span>
+            {/* <span> {user.mkName}</span>
             <span> {user.mkLocation}</span>
             <span> {user.mkCpdate}</span>
             <span> {user.mkFounder}</span>
             <span> {user.mileStone}</span>
             <span> {user.moveNum}</span>
-            <span> {user.myWallet}</span>
+            <span> {user.myWallet}</span> */}
             <button onClick={() => onRemove(user.id)} >삭제</button>
         </li>
 
