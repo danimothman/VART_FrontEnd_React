@@ -12,6 +12,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App-partials {
+  background-color: black;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: calc(8px + 2vmin);
+  color: black;
+}
 
 .App-header {
   background-color: white;

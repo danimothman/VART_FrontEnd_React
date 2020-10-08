@@ -1,8 +1,12 @@
 import React from 'react'
 import { Navbar, Button, FormControl, Nav, Form } from 'react-bootstrap';
+import '../../App.css';
+
+
+
 function Partials() {
     return (
-        <div>
+        <div className="App-partials">
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="/">VART</Navbar.Brand>
                 <Nav className="mr-auto">
@@ -11,7 +15,7 @@ function Partials() {
                     <Nav.Link href="../Service">서비스</Nav.Link>
                     <Nav.Link href="../About">소개</Nav.Link>
                     <Nav.Link href="../Announcement">공지사항</Nav.Link>
-                    <Nav.Link href="#pricing">고객센터</Nav.Link>
+                    {/* <Nav.Link href="fag">고객센터</Nav.Link> */}
                     <Nav.Link href="../projectItemCreate">공시등록</Nav.Link>
                 </Nav>
                 <Form inline>
