@@ -3,7 +3,9 @@ import { Navbar, Button, FormControl, Nav, Form } from 'react-bootstrap';
 import '../../App.css';
 
 
-
+// 상단메뉴 화면구현
+// 적용링크 예시
+// import Partials from './partials/Partials'
 function Partials() {
     return (
         <div className="App-partials">
@@ -30,6 +32,3 @@ function Partials() {
 export default Partials;
 
 
-// 상단메뉴
-// 적용링크 예시
-// import Partials from './partials/Partials'
