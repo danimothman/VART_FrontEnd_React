@@ -3,7 +3,7 @@ import '../App.css';
 import logo from '../logo.svg';
 // import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
-import Partials from './partials/Partials'
+import Partials from './partials/partials'
 
 import { Button } from 'react-bootstrap';
 

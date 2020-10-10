@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 // import HelloScreen from '../screens/HelloScreen'
 // import CounterScreen, { } from '../screens/CounterScreen'
 // import UserScreen1 from '../screens/UserScreen'
-import Partials from './partials/Partials'
+import Partials from './partials/partials'
 import ProjectItemScreen from '../screens/ProjectItemScreen'
 const projectItem = ({ history }) => {
     return (
