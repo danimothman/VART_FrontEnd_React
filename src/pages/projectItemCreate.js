@@ -164,7 +164,7 @@ const ProjectItemCreate = ({ history }) => {
                     user={username} useremail={email}
                     // tokenlogo={tokenLogo} 
                     tokenname={tokenName} projecttype={projectType}
-                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyEstablishment} statejurisdiction={stateJurisdiction}
+                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
                     membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
                     developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
                     // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}

@@ -14,10 +14,7 @@ const projectItem = ({ history }) => {
         <div className="App">
             <Partials />
             <header className="App-header">
-
-
                 <ProjectItemScreen />
-
             </header>
         </div>
 

@@ -148,19 +148,21 @@ function ProjectItemScreen() {
 
     const count = useMemo(() => countActiveUsers(users), [users])
     return (
-        <div>
-            <CreateCompanyUser
-                user={username} useremail={email}
-                // tokenlogo={tokenLogo} 
-                tokenname={tokenName} projecttype={projectType}
-                companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyEstablishment} statejurisdiction={stateJurisdiction}
-                membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
-                developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
-                // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
-                // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
-                onChange={onChangeInput} onCreate={onCreate} />
-            <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
-            <div>활성자 수 : {count}</div>
+        <div className="App">
+            <header className="App-header">
+                <CreateCompanyUser
+                    user={username} useremail={email}
+                    // tokenlogo={tokenLogo} 
+                    tokenname={tokenName} projecttype={projectType}
+                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyEstablishment} statejurisdiction={stateJurisdiction}
+                    membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
+                    developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
+                    // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
+                    // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
+                    onChange={onChangeInput} onCreate={onCreate} />
+                <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
+                <div>활성자 수 : {count}</div>
+            </header>
         </div>
     )
 }
