@@ -13,13 +13,14 @@ import MainPage from "./pages/MainPage";
 // import registerTutor from './pages/registerTutor';
 // import FindTutor from './pages/FindTutor';
 // import FindStudent from './pages/FindStudent';
-import Test from './pages/Test';
+// import Test from './pages/Test';
 import projectItem from './pages/projectItem';
 import Project from './pages/Project';
 import About from './pages/About';
 import Announcement from './pages/Announcement';
 import Service from './pages/Service';
 import projectItemCreate from './pages/projectItemCreate';
+// import projectItemList from './pages/projectItemList';
 
 
 const App = () => {//projectItem
@@ -36,13 +37,14 @@ const App = () => {//projectItem
       <Route path="/registerTutor" component={registerTutor} />
       <Route exact path="/FindTutor" component={FindTutor} />
       <Route exact path="/FindStudent" component={FindStudent} /> */}
-      <Route exact path="/Test" component={Test} />
+      {/* <Route exact path="/Test" component={Test} /> */}
       <Route exact path="/projectItem" component={projectItem} />
       <Route exact path="/Project" component={Project} />
       <Route exact path="/About" component={About} />
       <Route exact path="/Announcement" component={Announcement} />
       <Route exact path="/Service" component={Service} />
       <Route exact path="/projectItemCreate" component={projectItemCreate} />
+      {/* <Route exact path="/projectItemList" component={projectItemList} /> */}
     </div>
   )
 }
