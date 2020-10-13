@@ -20,6 +20,7 @@ import About from './pages/About';
 import Announcement from './pages/Announcement';
 import Service from './pages/Service';
 import projectItemCreate from './pages/projectItemCreate';
+import CompanyLogin from './pages/CompanyLogin';
 // import projectItemList from './pages/projectItemList';
 
 import Partials from './pages/partials/partials'
@@ -47,6 +48,7 @@ const App = () => {//projectItem
         <Route exact path="/Announcement" component={Announcement} />
         <Route exact path="/Service" component={Service} />
         <Route exact path="/projectItemCreate" component={projectItemCreate} />
+        <Route exact path="/CompanyLogin" component={CompanyLogin} />
         {/* <Route exact path="/projectItemList" component={projectItemList} /> */}
       </div>
     </div>

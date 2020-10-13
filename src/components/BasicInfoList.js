@@ -32,12 +32,12 @@ var User = ({ user, onToggle, onRemove }) => {
             <td> {user.developerLeaderEducation}</td>
             <td> {user.developerLeaderExperience}</td>
             {/* <td> {user.mkName}</td>
-    <td> {user.mkLocation}</td>
-    <td> {user.mkCpdate}</td>
-    <td> {user.mkFounder}</td>
-    <td> {user.mileStone}</td>
-    <td> {user.moveNum}</td>
-    <td> {user.myWallet}</td> */}
+                <td> {user.mkLocation}</td>
+                <td> {user.mkCpdate}</td>
+                <td> {user.mkFounder}</td>
+                <td> {user.mileStone}</td>
+                <td> {user.moveNum}</td>
+                <td> {user.myWallet}</td> */}
             <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button>
         </tr>
 
@@ -53,7 +53,7 @@ function BasicInfoList({ users, onToggle, onRemove }) {
                     <thead>
                         <tr>
                             <th>순번</th>
-                            <th>아이디</th>
+                            <th>이름</th>
                             <th>이메일</th>
                             <th>토큰 이름</th>
 

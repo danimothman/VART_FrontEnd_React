@@ -30,6 +30,7 @@ function Partials() {
                     </Nav>
 
                     <Nav>
+                        <Nav.Link href="../CompanyLogin">로그인</Nav.Link>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                             <Button variant="outline-info">Search</Button>
