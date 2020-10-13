@@ -1,5 +1,7 @@
 // useRef를 활용한 Component안에 변수 만들기
 import React, { useEffect } from 'react'
+import { Navbar, Container, Button, FormControl, Nav, Form, NavDropdown, Table } from 'react-bootstrap';
+import '../App.css'
 
 var User = ({ user, onToggle, onRemove }) => {
     useEffect(() => {
@@ -10,32 +12,34 @@ var User = ({ user, onToggle, onRemove }) => {
         //     console.log(user)
         // }
     }, [])
+
     return (
-        <li Key={user.id}><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>
-            {user.username} : </b>
-            <span> {user.email}</span>
-            {/* <span> {user.tokenLogo}</span> */}
-            <span> {user.tokenName}</span>
-            <span> {user.projectType}</span>
-            <span> {user.companyName}</span>
-            <span> {user.companyEstablishment}</span>
-            <span> {user.companyLocation}</span>
-            <span> {user.stateJurisdiction}</span>
-            <span> {user.memberName}</span>
-            <span> {user.memberEducation}</span>
-            <span> {user.memberExperience}</span>
-            <span> {user.developerLeaderName}</span>
-            <span> {user.developerLeaderEducation}</span>
-            <span> {user.developerLeaderExperience}</span>
-            {/* <span> {user.mkName}</span>
-            <span> {user.mkLocation}</span>
-            <span> {user.mkCpdate}</span>
-            <span> {user.mkFounder}</span>
-            <span> {user.mileStone}</span>
-            <span> {user.moveNum}</span>
-            <span> {user.myWallet}</span> */}
-            <button onClick={() => onRemove(user.id)} >삭제</button>
-        </li>
+        <tr className="tableFont">
+            <td Key={user.id} style={{}}>{user.id}</td>
+            <td><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></td>
+            <td> {user.email}</td>
+            {/* <td> {user.tokenLogo}</td> */}
+            <td> {user.tokenName}</td>
+            <td> {user.projectType}</td>
+            <td> {user.companyName}</td>
+            <td> {user.companyEstablishment}</td>
+            <td> {user.companyLocation}</td>
+            <td> {user.stateJurisdiction}</td>
+            <td> {user.memberName}</td>
+            <td> {user.memberEducation}</td>
+            <td> {user.memberExperience}</td>
+            <td> {user.developerLeaderName}</td>
+            <td> {user.developerLeaderEducation}</td>
+            <td> {user.developerLeaderExperience}</td>
+            {/* <td> {user.mkName}</td>
+    <td> {user.mkLocation}</td>
+    <td> {user.mkCpdate}</td>
+    <td> {user.mkFounder}</td>
+    <td> {user.mileStone}</td>
+    <td> {user.moveNum}</td>
+    <td> {user.myWallet}</td> */}
+            <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button>
+        </tr>
 
     )
 }
@@ -44,12 +48,42 @@ var User = ({ user, onToggle, onRemove }) => {
 function BasicInfoList({ users, onToggle, onRemove }) {
     return (
         <div>
-            <ul>
-                {users.map(user => (
-                    <User user={user} onRemove={onRemove} onToggle={onToggle} />
-                ))
-                }
-            </ul>
+            <div>
+                <Table responsive="sm">
+                    <thead>
+                        <tr>
+                            <th>순번</th>
+                            <th>아이디</th>
+                            <th>이메일</th>
+                            <th>토큰 이름</th>
+
+                            <th>프로젝트 종류</th>
+
+                            <th>회사 이름</th>
+                            <th>회사 설립일</th>
+                            <th>회사 위치</th>
+                            <th>법인 관할자(Corporate jurisdiction)</th>
+                            <th>경영진 이름</th>
+                            <th>경영진 학력</th>
+                            <th>경영진 경력</th>
+                            <th>개발자 이름</th>
+                            <th>개발자 학력</th>
+                            <th>개발자 경력</th>
+                            <th>삭제 여부</th>
+
+                        </tr>
+                    </thead>
+                    < tbody >
+                        {users.map(user => (
+                            <User user={user} onRemove={onRemove} onToggle={onToggle} />
+                        ))
+                        }
+
+                    </ tbody >
+                </Table >
+            </div >
+
+
         </div>
     )
 }

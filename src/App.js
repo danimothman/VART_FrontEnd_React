@@ -27,7 +27,6 @@ import Partials from './pages/partials/partials'
 const App = () => {//projectItem
   return (
     <div>
-
       <Partials />
       <div>
         <Route exact path="/" component={MainPage} />

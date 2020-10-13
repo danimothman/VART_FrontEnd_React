@@ -160,6 +160,7 @@ function ProjectItemScreen() {
                     // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
                     // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
                     onChange={onChangeInput} onCreate={onCreate} />
+
                 <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
                 <div>활성자 수 : {count}</div>
             </header>

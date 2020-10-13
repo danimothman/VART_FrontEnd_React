@@ -26,15 +26,15 @@ function Partials() {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="fag">고객센터</NavDropdown.Item>
                         </NavDropdown>
+
+                    </Nav>
+
+                    <Nav>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                             <Button variant="outline-info">Search</Button>
                         </Form>
                     </Nav>
-                    {/* 
-                    <Nav>
-
-                    </Nav> */}
 
                 </Navbar.Collapse>
             </Navbar>
