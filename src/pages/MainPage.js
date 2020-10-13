@@ -3,7 +3,6 @@ import '../App.css';
 import logo from '../logo.svg';
 // import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
-import Partials from './partials/partials'
 
 import { Button } from 'react-bootstrap';
 
@@ -11,7 +10,6 @@ import { Button } from 'react-bootstrap';
 const MainPage = ({ history }) => {
   return (
     <div className="App">
-      <Partials />
       <header className="App-header">
 
         <Button variant="info" size="lg" onClick={() => {

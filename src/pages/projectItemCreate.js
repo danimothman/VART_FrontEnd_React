@@ -2,7 +2,6 @@ import React, { useState, useMemo, useCallback, useRef } from 'react'
 import '../App.css';
 import logo from '../logo.svg';
 import { Button } from 'react-bootstrap';
-import Partials from './partials/partials'
 //회사 가짜 데이터 공시정보 입력경로
 import { CompanyData } from './../data/companyData'
 //공시정보 작성 경로
@@ -155,7 +154,7 @@ const ProjectItemCreate = ({ history }) => {
     return (
 
         <div className="App">
-            <Partials />
+
             <header className="App-header">
                 <div>
                     공시등록

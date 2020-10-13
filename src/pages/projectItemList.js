@@ -29,7 +29,6 @@ function projectItemList() {
 
     return (
         <div className="App">
-            <Partials />
             <header className="App-header">
                 <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
                 <div>활성자 수 : {count}</div>
