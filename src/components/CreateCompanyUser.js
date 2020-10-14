@@ -15,7 +15,7 @@ function CreateCompanyUser({
         <div>
             <form>
                 <br></br>
-                <div>
+                <div className="App-body">
                     <Form>
                         <Form>
                             <Form.Label>계정정보</Form.Label>
