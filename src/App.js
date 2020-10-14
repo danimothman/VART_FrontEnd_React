@@ -22,10 +22,10 @@ import Service from './pages/Service';
 import projectItemCreate from './pages/projectItemCreate';
 import CompanyLogin from './pages/CompanyLogin';
 // import projectItemList from './pages/projectItemList';
-
+import Faq from './pages/Faq';
 import Partials from './pages/partials/partials'
 
-const App = () => {//projectItem
+const App = () => {//projectItem  
   return (
     <div>
       <Partials />
@@ -50,6 +50,7 @@ const App = () => {//projectItem
         <Route exact path="/projectItemCreate" component={projectItemCreate} />
         <Route exact path="/CompanyLogin" component={CompanyLogin} />
         {/* <Route exact path="/projectItemList" component={projectItemList} /> */}
+        <Route exact path="/Faq" component={Faq} />
       </div>
     </div>
   )

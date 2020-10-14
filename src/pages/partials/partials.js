@@ -24,7 +24,7 @@ function Partials() {
                             <NavDropdown.Item href="../Announcement">공지사항</NavDropdown.Item>
                             <NavDropdown.Item href="../About">소개</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="fag">고객센터</NavDropdown.Item>
+                            <NavDropdown.Item href="../Faq">고객센터</NavDropdown.Item>
                         </NavDropdown>
 
                     </Nav>

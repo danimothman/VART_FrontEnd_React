@@ -15,3 +15,4 @@ export { default as About } from './About';
 export { default as Announcement } from './Announcement';
 export { default as Service } from './Service';
 export { default as CompanyLogin } from './CompanyLogin';
+export { default as Faq } from './Faq';
