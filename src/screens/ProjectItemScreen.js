@@ -148,8 +148,8 @@ function ProjectItemScreen() {
 
     const count = useMemo(() => countActiveUsers(users), [users])
     return (
-        <div className="App">
-            <header className="App-header">
+        <div>
+            <div className="AppLogin">
                 <CreateCompanyUser
                     user={username} useremail={email}
                     // tokenlogo={tokenLogo} 
@@ -160,10 +160,13 @@ function ProjectItemScreen() {
                     // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
                     // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
                     onChange={onChangeInput} onCreate={onCreate} />
+            </div>
 
+            <div>
                 <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
                 <div>활성자 수 : {count}</div>
-            </header>
+            </div>
+
         </div>
     )
 }

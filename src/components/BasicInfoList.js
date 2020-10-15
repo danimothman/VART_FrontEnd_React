@@ -43,47 +43,41 @@ var User = ({ user, onToggle, onRemove }) => {
 
     )
 }
-
-
 function BasicInfoList({ users, onToggle, onRemove }) {
     return (
         <div>
-            <div>
-                <Table responsive="sm">
-                    <thead>
-                        <tr>
-                            <th>순번</th>
-                            <th>이름</th>
-                            <th>이메일</th>
-                            <th>토큰 이름</th>
+            <Table responsive="sm">
+                <thead>
+                    <tr>
+                        <th>순번</th>
+                        <th>이름</th>
+                        <th>이메일</th>
+                        <th>토큰 이름</th>
 
-                            <th>프로젝트 종류</th>
+                        <th>프로젝트 종류</th>
 
-                            <th>회사 이름</th>
-                            <th>회사 설립일</th>
-                            <th>회사 위치</th>
-                            <th>법인 관할자(Corporate jurisdiction)</th>
-                            <th>경영진 이름</th>
-                            <th>경영진 학력</th>
-                            <th>경영진 경력</th>
-                            <th>개발자 이름</th>
-                            <th>개발자 학력</th>
-                            <th>개발자 경력</th>
-                            <th>삭제 여부</th>
+                        <th>회사 이름</th>
+                        <th>회사 설립일</th>
+                        <th>회사 위치</th>
+                        <th>법인 관할자(Corporate jurisdiction)</th>
+                        <th>경영진 이름</th>
+                        <th>경영진 학력</th>
+                        <th>경영진 경력</th>
+                        <th>개발자 이름</th>
+                        <th>개발자 학력</th>
+                        <th>개발자 경력</th>
+                        <th>삭제 여부</th>
 
-                        </tr>
-                    </thead>
-                    < tbody >
-                        {users.map(user => (
-                            <User user={user} onRemove={onRemove} onToggle={onToggle} />
-                        ))
-                        }
+                    </tr>
+                </thead>
+                < tbody >
+                    {users.map(user => (
+                        <User user={user} onRemove={onRemove} onToggle={onToggle} />
+                    ))
+                    }
 
-                    </ tbody >
-                </Table >
-            </div >
-
-
+                </ tbody >
+            </Table >
         </div>
     )
 }

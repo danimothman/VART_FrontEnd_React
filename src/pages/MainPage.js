@@ -62,11 +62,14 @@ function ControlledCarousel() {
 const MainPage = ({ history }) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <ControlledCarousel />
-        <ProjectItemScreen />
-
-      </header>
+      <div className="AppAll">
+        <header className="AppHeader">
+          <ControlledCarousel />
+        </header>
+        <div className="AppBody">
+          <ProjectItemScreen />
+        </div>
+      </div>
     </div>
 
   );

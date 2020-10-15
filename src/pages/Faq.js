@@ -5,11 +5,13 @@ import { Button, Card, Nav, Accordion } from 'react-bootstrap';
 const Faq = ({ history }) => {
     return (
         <div className="App">
-            <header className="App-header">
-                <div className="App-body">
+            <div className="AppAll">
+                <header className="AppHeader">
                     <div>
                         고객센터
                     </div>
+                </header>
+                <div className="AppBody">
                     <div>
                         <Accordion defaultActiveKey="0">
                             <Card>
@@ -59,10 +61,8 @@ const Faq = ({ history }) => {
                         </Accordion>
                     </div>
                 </div>
-
-            </header>
+            </div>
         </div>
-
     );
 }
 

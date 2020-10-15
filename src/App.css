@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+  background-color: #f8f9fa;
 }
 
 /* .App-logo {
@@ -20,21 +20,11 @@
   font-size: calc(1px + 2vmin);
   color: black;
 } */
-
-.App-header {
-  background-color: #f8f9fa;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
-.App-body {
-  background-color: white;
+.AppAll {
+  background-color:#f8f9fa;
   min-height: 80vh;
-  min-width: 100vh;
+  min-width: 100%;
+  margin: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,15 +34,77 @@
 }
 
 
+.AppBody {
+  background-color:white;
+  min-height: 60vh;
+  min-width: 95%;
+  margin: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  
+}
+
+.AppHeader {
+  background-color: white;
+  min-height: 30vh;
+  min-width: 95%;
+  margin: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+
+.AppLogin {
+  background-color: white;
+  min-width: 50vh;
+  margin: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
 
 .App-link {
   color: #61dafb;
+}
+
+.AboutForm{
+  width: 18rem;
+  height: 40rem;
+}
+
+.AnnouncementForm {
+  margin: 30px;
 }
 
 
 .form-group2 {
   margin-bottom: 1rem;
   width: 80vh;
+}
+
+.form-group3 {
+  margin-bottom: 1rem;
+  width: 80vh;
+}
+.ServiceForm {
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+.ServiceCardForm {
+  width: 18rem;
 }
 
 

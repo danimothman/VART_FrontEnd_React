@@ -155,7 +155,7 @@ const ProjectItemCreate = ({ history }) => {
 
         <div className="App">
 
-            <header className="App-header">
+            <header className="AppHeader">
                 <div>
                     공시등록
                 </div>
