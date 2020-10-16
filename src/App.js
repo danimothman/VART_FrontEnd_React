@@ -21,6 +21,7 @@ import Announcement from './pages/Announcement';
 import Service from './pages/Service';
 import projectItemCreate from './pages/projectItemCreate';
 import CompanyLogin from './pages/CompanyLogin';
+import CompanyLoginCompleted from './pages/CompanyLoginCompleted';
 // import projectItemList from './pages/projectItemList';
 import Faq from './pages/Faq';
 import Partials from './pages/partials/partials'
@@ -49,6 +50,7 @@ const App = () => {//projectItem
         <Route exact path="/Service" component={Service} />
         <Route exact path="/projectItemCreate" component={projectItemCreate} />
         <Route exact path="/CompanyLogin" component={CompanyLogin} />
+        <Route exact path="/CompanyLoginCompleted" component={CompanyLoginCompleted} />
         {/* <Route exact path="/projectItemList" component={projectItemList} /> */}
         <Route exact path="/Faq" component={Faq} />
       </div>
