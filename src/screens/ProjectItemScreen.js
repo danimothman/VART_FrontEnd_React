@@ -6,6 +6,7 @@ import { CompanyData } from './../data/companyData'
 import BasicInfoList from '../components/BasicInfoList'
 //공시정보 작성 경로
 import CreateCompanyUser from '../components/CreateCompanyUser'
+import { Container } from 'react-bootstrap'
 
 function ProjectItemScreen() {
     const countActiveUsers = (users) => {
@@ -148,8 +149,8 @@ function ProjectItemScreen() {
 
     const count = useMemo(() => countActiveUsers(users), [users])
     return (
-        <div>
-            <div className="AppLogin">
+        <div className="AppBody">
+            <Container>
                 <CreateCompanyUser
                     user={username} useremail={email}
                     // tokenlogo={tokenLogo} 
@@ -160,14 +161,14 @@ function ProjectItemScreen() {
                     // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
                     // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
                     onChange={onChangeInput} onCreate={onCreate} />
-            </div>
-
-            <div>
+            </Container>
+            {/* <Container>
                 <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
                 <div>활성자 수 : {count}</div>
-            </div>
-
+            </Container> */}
         </div>
+
+
     )
 }
 

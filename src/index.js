@@ -5,7 +5,7 @@ import Root from './Root';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Root/>,
+  <Root />,
   document.getElementById('root')
 );
 

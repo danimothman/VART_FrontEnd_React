@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import logo from '../logo.svg';
-import { Button, Card, Nav } from 'react-bootstrap';
+import { Button, Card, Container, Nav } from 'react-bootstrap';
 const Announcement = ({ history }) => {
     return (
         <div className="App">
@@ -12,7 +12,7 @@ const Announcement = ({ history }) => {
                     </div>
                 </header>
                 <div className="AppBody">
-                    <div className="AnnouncementForm">
+                    <Container>
                         <Card>
                             <Card.Header>
                                 <Nav variant="tabs" defaultActiveKey="#first">
@@ -37,7 +37,7 @@ const Announcement = ({ history }) => {
                                 <Button variant="primary">Go somewhere</Button>
                             </Card.Body>
                         </Card>
-                    </div>
+                    </Container>
                 </div>
             </div>
         </div>

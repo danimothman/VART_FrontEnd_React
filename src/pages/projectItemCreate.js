@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useCallback, useRef } from 'react'
 import '../App.css';
 import logo from '../logo.svg';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 //회사 가짜 데이터 공시정보 입력경로
 import { CompanyData } from './../data/companyData'
 //공시정보 작성 경로
@@ -56,6 +56,7 @@ const ProjectItemCreate = ({ history }) => {
             [name]: value
         });
     }
+
     //useCallback 함수를 지우고 쓰는 기능(※[비권장]해당하는 방법은 메모리를 지우고 다시 쓰는 방식으로 진행되서 메모리 효율이 좋은 편이 아님)
     const onCreate = useCallback((e) => {
         e.preventDefault();
@@ -72,8 +73,6 @@ const ProjectItemCreate = ({ history }) => {
             // mileStone, moveNum, myWallet
         }
         setUsers([...users, user])
-
-
         setInputs({
             username: '',
             email: '',
@@ -99,6 +98,7 @@ const ProjectItemCreate = ({ history }) => {
             // myWallet: ''
         })
 
+        //=============================[JSON변환파일s]=============================
         const data = {
             basicinfo: {
                 companyname: companyName,
@@ -125,6 +125,7 @@ const ProjectItemCreate = ({ history }) => {
             method: 'POST',
             body: JSON.stringify(data)
         })
+        // 체인코드 설정
         // "infoKey":"Publicinfo4",
         // basicinfo: {
         //   companyname: "",
@@ -145,33 +146,32 @@ const ProjectItemCreate = ({ history }) => {
         //   name: "",
         //   education: "",
         //   experience: "",
-
+        //=============================[JSON변환파일e]=============================
         nextId.current += 1
-
-
     }, [users, inputs])
 
     return (
-
         <div className="App">
-
             <header className="AppHeader">
                 <div>
                     공시등록
                 </div>
-                <CreateCompanyUser
-                    user={username} useremail={email}
-                    // tokenlogo={tokenLogo} 
-                    tokenname={tokenName} projecttype={projectType}
-                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
-                    membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
-                    developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
-                    // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
-                    // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
-                    onChange={onChangeInput} onCreate={onCreate} />
             </header>
+            <div className="AppBody">
+                <Container>
+                    <CreateCompanyUser
+                        user={username} useremail={email}
+                        // tokenlogo={tokenLogo} 
+                        tokenname={tokenName} projecttype={projectType}
+                        companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
+                        membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
+                        developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
+                        // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
+                        // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
+                        onChange={onChangeInput} onCreate={onCreate} />
+                </Container>
+            </div>
         </div>
-
     );
 }
 

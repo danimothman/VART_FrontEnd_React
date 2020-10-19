@@ -5,6 +5,7 @@ import { CompanyData } from './../data/companyData'
 import BasicInfoList from '../components/BasicInfoList'
 //공시정보 작성 경로
 import CreateCompanyUser from '../components/CreateCompanyUser'
+import { Container } from 'react-bootstrap'
 function projectItemList() {
     const countActiveUsers = (users) => {
         console.log('활성화 사용자 수를 체크 하는 중')
@@ -30,9 +31,13 @@ function projectItemList() {
     return (
         <div className="App">
             <header className="AppHeader">
-                <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
-                <div>활성자 수 : {count}</div>
+                <div>
+                    공시 정보 리스트
+                </div>
             </header>
+            <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
+            <div>활성자 수 : {count}</div>
+
         </div>
 
     );

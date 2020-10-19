@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Button, FormControl, Nav, Form, Col } from 'react-bootstrap';
+import { Navbar, Button, FormControl, Nav, Form, Col, Row } from 'react-bootstrap';
 function CreateCompanyUser({
     user, useremail,
     // tokenlogo, 
@@ -13,200 +13,263 @@ function CreateCompanyUser({
 }) {
     return (
         <div>
-            <form>
-                <Form>
-                    <Form>
-                        <Form.Label>계정정보</Form.Label>
-                        <Form.Group as={Col} controlId="formBasicEmail">
-                            <Form.Label>계정명</Form.Label>
-                            <Form.Control
-                                name="username"
-                                placeholder="계정명"
-                                onChange={onChange}
-                                value={user}
-                            />
-                            <Form.Label>이메일</Form.Label>
-                            <Form.Control
-                                name="email"
-                                placeholder="이메일"
-                                onChange={onChange}
-                                value={useremail}
-                            />
-                        </Form.Group>
-                    </Form>
-                    <Form>
-                        <Form.Label>토큰정보</Form.Label>
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            {/* <Form.Label>토큰 로고</Form.Label>
-                            <Form.Control
-                                name="tokenLogo"
-                                placeholder="토큰 로고"
-                                onChange={onChange}
-                                value={tokenlogo}
-                            /> */}
-                            <Form.Label>토큰 이름</Form.Label>
-                            <Form.Control
-                                name="tokenName"
-                                placeholder="토큰 이름"
-                                onChange={onChange}
-                                value={tokenname}
-                            />
-                            <Form.Label>프로젝트 종류</Form.Label>
-                            <Form.Control
-                                name="projectType"
-                                placeholder="프로젝트 종류"
-                                onChange={onChange}
-                                value={projecttype}
-                            />
-                        </Form.Group>
-                    </Form>
-                    <Form>
-                        <Form.Label>공시정보</Form.Label>
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>회사이름</Form.Label>
-                            <Form.Control
-                                name="companyName"
-                                placeholder="회사이름"
-                                onChange={onChange}
-                                value={companyname}
-                            />
-                            <Form.Label>회사 설립일</Form.Label>
-                            <Form.Control
-                                name="companyEstablishment"
-                                placeholder="회사 설립일"
-                                onChange={onChange}
-                                value={companyestablishment}
-                            />
-                            <Form.Label>회사 위치</Form.Label>
-                            <Form.Control
-                                name="companyLocation"
-                                placeholder="회사 위치"
-                                onChange={onChange}
-                                value={companylocation}
-                            />
-                            <Form.Label>법인 관할자(Corporate jurisdiction) 위치</Form.Label>
-                            <Form.Control
-                                name="stateJurisdiction"
-                                placeholder="법인 관할자(Corporate jurisdiction) 위치"
-                                onChange={onChange}
-                                value={statejurisdiction}
-                            />
-                        </Form.Group>
-                    </Form>
-                    <Form>
-                        <Form.Label>경영진</Form.Label>
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>경영진 이름</Form.Label>
-                            <Form.Control
-                                name="memberName"
-                                placeholder="경영진 이름"
-                                onChange={onChange}
-                                value={membername}
-                            />
-                            <Form.Label>경영진 학력</Form.Label>
-                            <Form.Control
-                                name="memberEducation"
-                                placeholder="경영진 학력"
-                                onChange={onChange}
-                                value={membereducation}
-                            />
-                            <Form.Label>경영진 경력</Form.Label>
-                            <Form.Control
-                                name="memberExperience"
-                                placeholder="경영진 경력"
-                                onChange={onChange}
-                                value={memberexperience}
-                            />
-                        </Form.Group>
-                    </Form>
-                    <Form>
-                        <Form.Label>개발자리더</Form.Label>
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>개발자 이름</Form.Label>
-                            <Form.Control
-                                name="developerLeaderName"
-                                placeholder="개발자 이름"
-                                onChange={onChange}
-                                value={developerleadername}
-                            />
-                            <Form.Label>개발자 학력</Form.Label>
-                            <Form.Control
-                                name="developerLeaderEducation"
-                                placeholder="개발자 학력"
-                                onChange={onChange}
-                                value={developerleadereducation}
-                            />
-                            <Form.Label>개발자 경력</Form.Label>
-                            <Form.Control
-                                name="developerLeaderExperience"
-                                placeholder="개발자 경력"
-                                onChange={onChange}
-                                value={developerleaderexperience}
-                            />
-                        </Form.Group>
-                    </Form>
-                    {/* <Form>
-                        <Form.Label>Onchain</Form.Label>
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>마켓 이름</Form.Label>
-                            <Form.Control
-                                name="mkName"
-                                placeholder="마켓 이름"
-                                onChange={onChange}
-                                value={mkname}
-                            />
-                            <Form.Label>마켓 위치</Form.Label>
-                            <Form.Control
-                                name="mkLocation"
-                                placeholder="마켓 위치"
-                                onChange={onChange}
-                                value={mklocation}
-                            />
-                            <Form.Label>마켓 cpdate</Form.Label>
-                            <Form.Control
-                                name="mkCpdate"
-                                placeholder="마켓 cpdate"
-                                onChange={onChange}
-                                value={mkcpdate}
-                            />
-                            <Form.Label>마켓 설립자</Form.Label>
-                            <Form.Control
-                                name="mkFounder"
-                                placeholder="마켓 설립자"
-                                onChange={onChange}
-                                value={mkfounder}
-                            />
-                        </Form.Group>
-                    </Form>
-                    <Form>
-                        <Form.Label>지갑정보</Form.Label>
-                        <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>milestone</Form.Label>
-                            <Form.Control
-                                name="mileStone"
-                                placeholder="milestone"
-                                onChange={onChange}
-                                value={milestone}
-                            />
-                            <Form.Label>movenum</Form.Label>
-                            <Form.Control
-                                name="moveNum"
-                                placeholder="movenum"
-                                onChange={onChange}
-                                value={movenum}
-                            />
-                            <Form.Label>wallet</Form.Label>
-                            <Form.Control
-                                name="myWallet"
-                                placeholder="wallet"
-                                onChange={onChange}
-                                value={mywallet}
-                            />
-                        </Form.Group>
-                    </Form> */}
-                </Form>
-                <button onClick={onCreate} >공시 정보 등록</button>
-            </form>
+            <Form.Label>계정정보</Form.Label>
+            <Form.Group as={Row} controlId="formBasicEmail">
+                <Form.Label column sm={2}>계정명</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="username"
+                        placeholder="계정명"
+                        onChange={onChange}
+                        value={user}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>이메일</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="email"
+                        placeholder="이메일"
+                        onChange={onChange}
+                        value={useremail}
+                    />
+                </Col>
+            </Form.Group>
+
+            <Form.Label>토큰정보</Form.Label>
+            {/* <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>토큰로고</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="tokenLogo"
+                            placeholder="토큰 로고"
+                            onChange={onChange}
+                            value={tokenlogo}
+                        />
+                    </Col>
+                </Form.Group> */}
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>토큰이름</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="tokenName"
+                        placeholder="토큰이름"
+                        onChange={onChange}
+                        value={tokenname}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>프로젝트종류</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="projectType"
+                        placeholder="프로젝트종류"
+                        onChange={onChange}
+                        value={projecttype}
+                    />
+                </Col>
+            </Form.Group>
+
+            <Form.Label>공시정보</Form.Label>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>회사이름</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="companyName"
+                        placeholder="회사이름"
+                        onChange={onChange}
+                        value={companyname}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>회사설립일</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="companyEstablishment"
+                        placeholder="회사설립일"
+                        onChange={onChange}
+                        value={companyestablishment}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>회사위치</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="companyLocation"
+                        placeholder="회사위치"
+                        onChange={onChange}
+                        value={companylocation}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>법인 관할자 위치</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="stateJurisdiction"
+                        placeholder="법인 관할자(Corporate jurisdiction) 위치"
+                        onChange={onChange}
+                        value={statejurisdiction}
+                    />
+                </Col>
+            </Form.Group>
+
+            <Form.Label>경영진</Form.Label>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>경영진이름</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="memberName"
+                        placeholder="경영진이름"
+                        onChange={onChange}
+                        value={membername}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>경영진학력</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="memberEducation"
+                        placeholder="경영진학력"
+                        onChange={onChange}
+                        value={membereducation}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>경영진경력</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="memberExperience"
+                        placeholder="경영진경력"
+                        onChange={onChange}
+                        value={memberexperience}
+                    />
+                </Col>
+            </Form.Group>
+
+            <Form.Label>개발자리더</Form.Label>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>개발자이름</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="developerLeaderName"
+                        placeholder="개발자이름"
+                        onChange={onChange}
+                        value={developerleadername}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>개발자학력</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="developerLeaderEducation"
+                        placeholder="개발자학력"
+                        onChange={onChange}
+                        value={developerleadereducation}
+                    />
+                </Col>
+            </Form.Group>
+            <Form.Group as={Row} controlId="">
+                <Form.Label column sm={2}>개발자경력</Form.Label>
+                <Col sm={10}>
+                    <Form.Control
+                        name="developerLeaderExperience"
+                        placeholder="개발자경력"
+                        onChange={onChange}
+                        value={developerleaderexperience}
+                    />
+                </Col>
+            </Form.Group>
+
+            {/* <Form.Label>Onchain</Form.Label>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓이름</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="mkName"
+                            placeholder="마켓이름"
+                            onChange={onChange}
+                            value={mkname}
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓위치</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="mkLocation"
+                            placeholder="마켓위치"
+                            onChange={onChange}
+                            value={mklocation}
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓cpdate</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="mkCpdate"
+                            placeholder="마켓cpdate"
+                            onChange={onChange}
+                            value={mkcpdate}
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="mkFounder"
+                            placeholder="마켓설립자"
+                            onChange={onChange}
+                            value={mkfounder}
+                        />
+                    </Col>
+                </Form.Group> */}
+
+            {/* <Form.Label>지갑정보</Form.Label>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="mileStone"
+                            placeholder="milestone"
+                            onChange={onChange}
+                            value={milestone}
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="moveNum"
+                            placeholder="movenum"
+                            onChange={onChange}
+                            value={movenum}
+                        />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row} controlId="">
+                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Col sm={10}>
+                        <Form.Control
+                            name="myWallet"
+                            placeholder="wallet"
+                            onChange={onChange}
+                            value={mywallet}
+                        />
+                    </Col>
+                </Form.Group> */}
+            <button onClick={onCreate} >공시 정보 등록</button>
+
             {/* <button onClick={onCreate} >공시 정보 등록</button> */}
         </div>
     )
