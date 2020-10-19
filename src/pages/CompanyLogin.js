@@ -53,7 +53,7 @@ const CompanyLogin = ({ history }) => {
 
     return (
         <div className="App">
-            <button onClick={e => sample()} >sample</button>
+            {/* <button onClick={e => sample()} >sample</button> */}
             <div className="AppAll">
                 <header className="AppHeader">
                     <h1>Login</h1>
