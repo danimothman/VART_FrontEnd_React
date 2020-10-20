@@ -54,45 +54,42 @@ const CompanyLogin = ({ history }) => {
     return (
         <div className="App">
             {/* <button onClick={e => sample()} >sample</button> */}
-            <div className="AppAll">
-                <header className="AppHeader">
-                    <h1>Login</h1>
-                    <h2>로그인하세요!</h2>
-                    <hr></hr>
-                </header>
-                <div className="AppBody">
-                    <Container>
-                        <Form>
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
-                                <Form.Text className="text-muted">
-                                    We'll never share your email with anyone else.
+            <header className="app-header">
+                <h1>Login</h1>
+                <h2>로그인하세요!</h2>
+                <hr></hr>
+            </header>
+            <div className="app-body">
+                <Container>
+                    <Form>
+                        <Form.Group controlId="formBasicEmail">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Text className="text-muted">
+                                We'll never share your email with anyone else.
                             </Form.Text>
-                            </Form.Group>
+                        </Form.Group>
 
-                            <Form.Group controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" placeholder="Password" />
-                            </Form.Group>
-                            <Form.Group controlId="formBasicCheckbox">
-                                <Form.Check type="checkbox" label="Check me out" />
-                            </Form.Group>
-                            <Button variant="primary" type="submit" href="./CompanyLoginCompleted">
-                                Submit
+                        <Form.Group controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="Password" />
+                        </Form.Group>
+                        <Form.Group controlId="formBasicCheckbox">
+                            <Form.Check type="checkbox" label="Check me out" />
+                        </Form.Group>
+                        <Button variant="primary" type="submit" href="./CompanyLoginCompleted">
+                            Submit
                         </Button>
-                            <Button variant="primary" onClick={
-                                (e) => {
-                                    e.preventDefault();
-                                    sumbitLogin(userEmail, pwd)
-                                }
-                            } >
-                                Submit
+                        <Button variant="primary" onClick={
+                            (e) => {
+                                e.preventDefault();
+                                sumbitLogin(userEmail, pwd)
+                            }
+                        } >
+                            Submit
                         </Button>
-                        </Form>
-                    </Container>
-                </div>
-
+                    </Form>
+                </Container>
             </div>
         </div>
     );

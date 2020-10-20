@@ -8,7 +8,7 @@
   pointer-events: none;
 } */
 
-.AppHeader {
+.app-header {
   background-color: white;
   min-height: 30vh;
   width: 100%;
@@ -20,17 +20,12 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
-.AppBody {
+.app-body {
   background-color: white;
-  width: 100%;
   margin: 32px auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.FaqBody {
+.faq-body {
   background-color: white;
   width: 100%;
   margin: 32px auto 0;
@@ -44,22 +39,22 @@
   color: #61dafb;
 }
 
-.AboutForm{
+.about-form{
 
 }
 
-.AnnouncementForm {
+.announcement-form {
   margin: 30px;
 }
 
 
-.ServiceForm {
+.service-form {
   margin: 10px;
   font-size: 20px;
 }
 
 
-.ServiceCardForm {
+.service-card-form {
   /* width: 18rem; */
 }
 
@@ -72,7 +67,7 @@
     transform: rotate(360deg);
   }
 } */
-.tableFont {
+.table-font {
   font-size: 8px;
 }
 

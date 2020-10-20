@@ -60,6 +60,8 @@ function ProjectItemScreen() {
         });
     }
     //useCallback 함수를 지우고 쓰는 기능(※[비권장]해당하는 방법은 메모리를 지우고 다시 쓰는 방식으로 진행되서 메모리 효율이 좋은 편이 아님)
+
+    // 서버에 POST요청만(fetch) 보낸다.
     const onCreate = useCallback((e) => {
         e.preventDefault();
         const user = {
@@ -149,7 +151,7 @@ function ProjectItemScreen() {
 
     const count = useMemo(() => countActiveUsers(users), [users])
     return (
-        <div className="AppBody">
+        <div className="app-body">
             <Container>
                 <CreateCompanyUser
                     user={username} useremail={email}

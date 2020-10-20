@@ -6,7 +6,7 @@ import ProjectItemScreen from '../screens/ProjectItemScreen'
 const Project = ({ history }) => {
     return (
         <div className="App">
-            <header className="AppHeader">
+            <header className="app-header">
                 <div>
                     공시
                 </div>

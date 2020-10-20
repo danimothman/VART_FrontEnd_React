@@ -15,7 +15,7 @@ import { Button, Carousel, Container } from 'react-bootstrap';
 const MainPage = ({ history }) => {
   return (
     <div className="App">
-      <header className="AppHeader">
+      <header className="app-header">
         <ControlledCarousel />
       </header>
       <ProjectItemScreen />

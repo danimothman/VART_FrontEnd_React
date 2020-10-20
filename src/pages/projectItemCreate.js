@@ -152,12 +152,12 @@ const ProjectItemCreate = ({ history }) => {
 
     return (
         <div className="App">
-            <header className="AppHeader">
+            <header className="app-header">
                 <div>
                     공시등록
                 </div>
             </header>
-            <div className="AppBody">
+            <div className="app-body">
                 <Container>
                     <CreateCompanyUser
                         user={username} useremail={email}

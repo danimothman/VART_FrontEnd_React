@@ -5,7 +5,7 @@ import { Button, Card, Container } from 'react-bootstrap';
 const About = ({ history }) => {
     return (
         <div className="App">
-            <header className="AppHeader">
+            <header className="app-header">
                 <div>
 
                     <div>
@@ -19,11 +19,11 @@ const About = ({ history }) => {
                     </div>
                 </div>
             </header>
-            <div className="AppBody">
+            <div className="app-body">
                 <Container>
                     <tr>
                         <td>
-                            <Card className="AboutForm">
+                            <Card className="about-form">
                                 <Card.Img variant="top" src="../images/kakao.jpg" />
                                 <Card.Body>
                                     <Card.Title>정유진</Card.Title>
@@ -35,7 +35,7 @@ const About = ({ history }) => {
                             </Card>
                         </td>
                         <td>
-                            <Card className="AboutForm">
+                            <Card className="about-form">
                                 <Card.Img variant="top" src="../images/kakao.jpg" />
                                 <Card.Body>
                                     <Card.Title>이상호</Card.Title>
@@ -47,7 +47,7 @@ const About = ({ history }) => {
                             </Card>
                         </td>
                         <td>
-                            <Card className="AboutForm">
+                            <Card className="about-form">
                                 <Card.Img variant="top" src="../images/kakao.jpg" />
                                 <Card.Body>
                                     <Card.Title>김환국</Card.Title>

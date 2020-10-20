@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Button, FormControl, Nav, Form, Col, Row } from 'react-bootstrap';
+import './CreateCompanyUser.css'
 function CreateCompanyUser({
     user, useremail,
     // tokenlogo, 
@@ -15,7 +16,7 @@ function CreateCompanyUser({
         <div>
             <Form.Label>계정정보</Form.Label>
             <Form.Group as={Row} controlId="formBasicEmail">
-                <Form.Label column sm={2}>계정명</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">계정명</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="username"
@@ -26,7 +27,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>이메일</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">이메일</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="email"
@@ -39,7 +40,7 @@ function CreateCompanyUser({
 
             <Form.Label>토큰정보</Form.Label>
             {/* <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>토큰로고</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">토큰로고</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="tokenLogo"
@@ -50,7 +51,7 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group> */}
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>토큰이름</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">토큰이름</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="tokenName"
@@ -61,7 +62,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>프로젝트종류</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">프로젝트종류</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="projectType"
@@ -74,7 +75,7 @@ function CreateCompanyUser({
 
             <Form.Label>공시정보</Form.Label>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>회사이름</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">회사이름</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="companyName"
@@ -85,7 +86,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>회사설립일</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">회사설립일</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="companyEstablishment"
@@ -96,7 +97,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>회사위치</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">회사위치</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="companyLocation"
@@ -107,7 +108,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>법인 관할자 위치</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">법인 관할자 위치</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="stateJurisdiction"
@@ -120,7 +121,7 @@ function CreateCompanyUser({
 
             <Form.Label>경영진</Form.Label>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>경영진이름</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">경영진이름</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="memberName"
@@ -131,7 +132,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>경영진학력</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">경영진학력</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="memberEducation"
@@ -142,7 +143,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>경영진경력</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">경영진경력</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="memberExperience"
@@ -155,7 +156,7 @@ function CreateCompanyUser({
 
             <Form.Label>개발자리더</Form.Label>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>개발자이름</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">개발자이름</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="developerLeaderName"
@@ -166,7 +167,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>개발자학력</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">개발자학력</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="developerLeaderEducation"
@@ -177,7 +178,7 @@ function CreateCompanyUser({
                 </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="">
-                <Form.Label column sm={2}>개발자경력</Form.Label>
+                <Form.Label column sm={2} className="ccu-form-label">개발자경력</Form.Label>
                 <Col sm={10}>
                     <Form.Control
                         name="developerLeaderExperience"
@@ -190,7 +191,7 @@ function CreateCompanyUser({
 
             {/* <Form.Label>Onchain</Form.Label>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓이름</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓이름</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="mkName"
@@ -201,7 +202,7 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓위치</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓위치</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="mkLocation"
@@ -212,7 +213,7 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓cpdate</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓cpdate</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="mkCpdate"
@@ -223,7 +224,7 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="mkFounder"
@@ -236,7 +237,7 @@ function CreateCompanyUser({
 
             {/* <Form.Label>지갑정보</Form.Label>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="mileStone"
@@ -247,7 +248,7 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="moveNum"
@@ -258,7 +259,7 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2}>마켓설립자</Form.Label>
+                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
                     <Col sm={10}>
                         <Form.Control
                             name="myWallet"

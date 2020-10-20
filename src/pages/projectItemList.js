@@ -28,9 +28,12 @@ function projectItemList() {
 
     const count = useMemo(() => countActiveUsers(users), [users])
 
+    // 서버에 GET요청을 보내서 데이터를 가져온다.
+    // Hook(useEffect 사용)
+
     return (
         <div className="App">
-            <header className="AppHeader">
+            <header className="app-header">
                 <div>
                     공시 정보 리스트
                 </div>

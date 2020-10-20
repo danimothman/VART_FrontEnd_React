@@ -5,12 +5,12 @@ import { Button, Card, Container } from 'react-bootstrap';
 const Service = ({ history }) => {
     return (
         <div className="App">
-            <header className="AppHeader">
+            <header className="app-header">
                 <div>
                     서비스
                     </div>
             </header>
-            <div className="AppBody">
+            <div className="app-body">
                 <Container>
                     <tr>
                         <td><Card>죄측</Card></td>
@@ -19,7 +19,7 @@ const Service = ({ history }) => {
                     </tr>
                     <tr>
                         <td>
-                            <Card className="ServiceCardForm">
+                            <Card className="service-card-form">
                                 <Card.Img variant="top" src="../images/kakao.jpg" />
                                 <Card.Body>
                                     <Card.Title>Card Title</Card.Title>
@@ -32,7 +32,7 @@ const Service = ({ history }) => {
                             </Card>
                         </td>
                         <td>
-                            <Card className="ServiceCardForm">
+                            <Card className="service-card-form">
                                 <Card.Img variant="top" src="../images/kakao.jpg" />
                                 <Card.Body>
                                     <Card.Title>Card Title</Card.Title>
@@ -45,7 +45,7 @@ const Service = ({ history }) => {
                             </Card>
                         </td>
                         <td>
-                            <Card className="ServiceCardForm">
+                            <Card className="service-card-form">
                                 <Card.Img variant="top" src="../images/kakao.jpg" />
                                 <Card.Body>
                                     <Card.Title>Card Title</Card.Title>

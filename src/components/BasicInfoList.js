@@ -14,7 +14,7 @@ var User = ({ user, onToggle, onRemove }) => {
     }, [])
 
     return (
-        <tr className="tableFont">
+        <tr className="table-font">
             <td Key={user.id} style={{}}>{user.id}</td>
             <td><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></td>
             <td> {user.email}</td>
