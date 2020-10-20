@@ -12,8 +12,7 @@ const CompanyLoginCompleted = ({ history }) => {
             </header>
             <div className="app-body">
                 응기잇
-
-                </div>
+            </div>
         </div>
     );
 }
