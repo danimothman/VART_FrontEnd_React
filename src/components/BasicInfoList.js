@@ -1,6 +1,7 @@
 // useRef를 활용한 Component안에 변수 만들기
 import React, { useEffect } from 'react'
 import { Navbar, Container, Button, FormControl, Nav, Form, NavDropdown, Table } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
 import '../App.css'
 
 var User = ({ user, onToggle, onRemove }) => {
@@ -25,12 +26,12 @@ var User = ({ user, onToggle, onRemove }) => {
             <td> {user.companyEstablishment}</td>
             <td> {user.companyLocation}</td>
             <td> {user.stateJurisdiction}</td>
-            <td> {user.memberName}</td>
+            {/* <td> {user.memberName}</td>
             <td> {user.memberEducation}</td>
             <td> {user.memberExperience}</td>
             <td> {user.developerLeaderName}</td>
             <td> {user.developerLeaderEducation}</td>
-            <td> {user.developerLeaderExperience}</td>
+            <td> {user.developerLeaderExperience}</td> */}
             {/* <td> {user.mkName}</td>
                 <td> {user.mkLocation}</td>
                 <td> {user.mkCpdate}</td>
@@ -60,12 +61,12 @@ function BasicInfoList({ users, onToggle, onRemove }) {
                         <th>회사 설립일</th>
                         <th>회사 위치</th>
                         <th>법인 관할자(Corporate jurisdiction)</th>
-                        <th>경영진 이름</th>
+                        {/* <th>경영진 이름</th>
                         <th>경영진 학력</th>
                         <th>경영진 경력</th>
                         <th>개발자 이름</th>
                         <th>개발자 학력</th>
-                        <th>개발자 경력</th>
+                        <th>개발자 경력</th> */}
                         <th>삭제 여부</th>
 
                     </tr>

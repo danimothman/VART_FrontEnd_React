@@ -1,19 +1,19 @@
-import React, { useState, useMemo, useCallback, useRef } from 'react'
+import React, { useState, useMemo, useCallback, useRef } from 'react';
 
 //회사 가짜 데이터 공시정보 입력경로
-import { CompanyData } from './../data/companyData'
+import { companyData2 } from '../data/companyData2';
 //공시 정보 리스트 출력 경로
-import BasicInfoList from '../components/BasicInfoList'
+import SelectCompanyUser from '../components/selectCompanyUser/selectCompanyUser';
 //공시정보 작성 경로
-import CreateCompanyUser from '../components/CreateCompanyUser'
-import { Container } from 'react-bootstrap'
+import CreateCompanyUser from '../components/CreateCompanyUser';
+import { Container } from 'react-bootstrap';
 
-function ProjectItemScreen() {
+function ProjectItemDetailPageScreen() {
     const countActiveUsers = (users) => {
         console.log('활성화 사용자 수를 체크 하는 중')
         return users.filter(user => user.active).length;
     }
-    const [users, setUsers] = useState(CompanyData)
+    const [users, setUsers] = useState(companyData2)
 
     const [inputs, setInputs] = useState({
         username: '',
@@ -153,7 +153,7 @@ function ProjectItemScreen() {
     return (
         <div className="app-body">
             <Container>
-                <BasicInfoList users={users} onRemove={onRemove} onToggle={onToggleFunc} />
+                <SelectCompanyUser users={users} onRemove={onRemove} onToggle={onToggleFunc} />
                 <div>활성자 수 : {count}</div>
             </Container>
         </div>
@@ -162,4 +162,4 @@ function ProjectItemScreen() {
     )
 }
 
-export default ProjectItemScreen;
+export default ProjectItemDetailPageScreen;

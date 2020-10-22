@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import logo from '../logo.svg';
 import { Button, Container } from 'react-bootstrap';
-import ProjectItemDetailPageScreen from '../screens/ProjectItemDetailPageScreen';
+import ProjectItemDetailPageScreen from '../screens/projectItemDetailPageScreen';
 const ProjectItem = ({ history }) => {
     return (
         <div className="App">
