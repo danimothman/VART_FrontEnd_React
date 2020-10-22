@@ -4,6 +4,9 @@ import logo from '../logo.svg';
 import { ESPIPE } from 'constants';
 import { CookieStorage } from "cookie-storage";
 import { Button, Container, Form } from 'react-bootstrap';
+import CompanyLoginCompleted from './CompanyLoginCompleted'
+import { link } from 'fs';
+
 const CompanyLogin = ({ history }) => {
 
     const [userEmail, setUserEmail] = React.useState("")
@@ -34,21 +37,11 @@ const CompanyLogin = ({ history }) => {
         }).then(data => {
             const cookieStorage = new CookieStorage();
             console.log(cookieStorage.getItem('connect.sid'));
+            history.push("./CompanyLoginCompleted")
+        }).catch(error => {
+            alert("로그인 실패")
         })
     }, [])
-
-    const sample = () => {
-        const cookieStorage = new CookieStorage();
-        const sid = cookieStorage.getItem('connect.sid');
-        fetch('http://localhost:3001/user/find', {
-            mode: 'cors',
-            method: "GET",
-            credentials: 'include',
-            headers: {
-                'Content-Type': 'application/json;charset=utf-8',
-            }
-        }).then(resp => resp.json()).then(data => { console.log(data) })
-    }
 
 
     return (
@@ -64,7 +57,8 @@ const CompanyLogin = ({ history }) => {
                     <Form>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Control type="email" placeholder="Enter email" onChange={(e) => { setUserEmail(e.target.value) }}
+                                value={userEmail} />
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
@@ -72,20 +66,17 @@ const CompanyLogin = ({ history }) => {
 
                         <Form.Group controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Control type="password" placeholder="Password" onChange={(e) => { setUserPwd(e.target.value) }}
+                                value={pwd} />
                         </Form.Group>
                         <Form.Group controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group>
-                        <Button variant="primary" type="submit" href="./CompanyLoginCompleted">
-                            Submit
-                        </Button>
-                        <Button variant="primary" onClick={
+                        <Button variant="primary" href="#none" onClick={
                             (e) => {
                                 e.preventDefault();
                                 sumbitLogin(userEmail, pwd)
-                            }
-                        } >
+                            }}>
                             Submit
                         </Button>
                     </Form>

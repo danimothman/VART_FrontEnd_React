@@ -1,19 +1,22 @@
 import React from 'react';
 import '../App.css';
 import logo from '../logo.svg';
-// import logo from './logo.svg';
-// import TutorLogin from "./components/TutorLogin";
-import { Button } from 'react-bootstrap';
-import ProjectItemScreen from '../screens/ProjectItemScreen'
-const projectItem = ({ history }) => {
+import { Button, Container } from 'react-bootstrap';
+import ProjectItemDetailPageScreen from '../screens/ProjectItemDetailPageScreen';
+const ProjectItem = ({ history }) => {
     return (
         <div className="App">
             <header className="app-header">
-                공시정보 상세페이지
+                <div>
+                    공시 상세 페이지
+                </div>
             </header>
+            <div>
+                <ProjectItemDetailPageScreen />
+            </div>
         </div>
 
     );
 }
 
-export default projectItem;
+export default ProjectItem;
