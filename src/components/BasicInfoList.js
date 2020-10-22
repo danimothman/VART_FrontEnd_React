@@ -17,16 +17,16 @@ var User = ({ user, onToggle, onRemove }) => {
     return (
         <tr className="table-font">
             <td Key={user.id} style={{}}>{user.id}</td>
-            <td><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></td>
-            <td> {user.email}</td>
+            {/* <td><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></td>
+            <td> {user.email}</td> */}
             {/* <td> {user.tokenLogo}</td> */}
             <td> <Nav.Link href="/ProjectItem">{user.tokenName}</Nav.Link></td>
-            <td> {user.projectType}</td>
+            {/* <td> {user.projectType}</td> */}
             <td> {user.companyName}</td>
             <td> {user.companyEstablishment}</td>
-            <td> {user.companyLocation}</td>
+            {/* <td> {user.companyLocation}</td>
             <td> {user.stateJurisdiction}</td>
-            {/* <td> {user.memberName}</td>
+            <td> {user.memberName}</td>
             <td> {user.memberEducation}</td>
             <td> {user.memberExperience}</td>
             <td> {user.developerLeaderName}</td>
@@ -39,7 +39,7 @@ var User = ({ user, onToggle, onRemove }) => {
                 <td> {user.mileStone}</td>
                 <td> {user.moveNum}</td>
                 <td> {user.myWallet}</td> */}
-            <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button>
+            {/* <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button> */}
         </tr>
 
     )
@@ -51,23 +51,23 @@ function BasicInfoList({ users, onToggle, onRemove }) {
                 <thead>
                     <tr>
                         <th>순번</th>
-                        <th>이름</th>
-                        <th>이메일</th>
+                        {/* <th>이름</th>
+                        <th>이메일</th> */}
                         <th>토큰 이름</th>
-
-                        <th>프로젝트 종류</th>
+                        {/* 
+                        <th>프로젝트 종류</th> */}
 
                         <th>회사 이름</th>
                         <th>회사 설립일</th>
-                        <th>회사 위치</th>
+                        {/* <th>회사 위치</th>
                         <th>법인 관할자(Corporate jurisdiction)</th>
-                        {/* <th>경영진 이름</th>
+                        <th>경영진 이름</th>
                         <th>경영진 학력</th>
                         <th>경영진 경력</th>
                         <th>개발자 이름</th>
                         <th>개발자 학력</th>
                         <th>개발자 경력</th> */}
-                        <th>삭제 여부</th>
+                        {/* <th>삭제 여부</th> */}
 
                     </tr>
                 </thead>

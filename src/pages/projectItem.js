@@ -11,9 +11,7 @@ const ProjectItem = ({ history }) => {
                     공시 상세 페이지
                 </div>
             </header>
-            <div>
-                <ProjectItemDetailPageScreen />
-            </div>
+            <ProjectItemDetailPageScreen />
         </div>
 
     );

@@ -3,6 +3,10 @@
   background-color: #f8f9fa;
 }
 
+.App-background-color {
+  background-color: #f8f9fa;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -22,6 +26,11 @@
 }
 .app-body {
   background-color: white;
+  margin: 32px auto 0;
+}
+
+.app-body-black {
+  background-color: #f8f9fa;
   margin: 32px auto 0;
 }
 

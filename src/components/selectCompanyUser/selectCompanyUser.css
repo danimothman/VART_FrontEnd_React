@@ -1,5 +1,14 @@
 
+.scu-body-background-color {
+    background-color:#f8f9fa;
+  }
 
+.scu-body {
+    background-color: white;
+    margin: 32px auto 0;
+    width: 100%;
+    font-size: 11px;
+  }
 
 .scu-form-label{
     text-align: right;
@@ -12,12 +21,10 @@
 }
 
 @media (min-width: 576px){
-
     .scu-form-label {
         margin-left:0;
         text-align: right;
     }
-
 
     .scu-form-label-text {
         margin-left:0;

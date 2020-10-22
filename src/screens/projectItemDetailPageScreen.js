@@ -151,11 +151,9 @@ function ProjectItemDetailPageScreen() {
 
     const count = useMemo(() => countActiveUsers(users), [users])
     return (
-        <div className="app-body">
-            <Container>
-                <SelectCompanyUser users={users} onRemove={onRemove} onToggle={onToggleFunc} />
-                <div>활성자 수 : {count}</div>
-            </Container>
+        <div className="app-body-black">
+            <SelectCompanyUser users={users} onRemove={onRemove} onToggle={onToggleFunc} />
+            <div>활성자 수 : {count}</div>
         </div>
 
 

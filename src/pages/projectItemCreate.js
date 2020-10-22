@@ -157,20 +157,19 @@ const ProjectItemCreate = ({ history }) => {
                     공시등록
                 </div>
             </header>
-            <div className="app-body">
-                <Container>
-                    <CreateCompanyUser
-                        user={username} useremail={email}
-                        // tokenlogo={tokenLogo} 
-                        tokenname={tokenName} projecttype={projectType}
-                        companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
-                        membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
-                        developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
-                        // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
-                        // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
-                        onChange={onChangeInput} onCreate={onCreate} />
-                </Container>
-            </div>
+            <Container>
+                <CreateCompanyUser
+                    user={username} useremail={email}
+                    // tokenlogo={tokenLogo} 
+                    tokenname={tokenName} projecttype={projectType}
+                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
+                    membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
+                    developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
+                    // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
+                    // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
+                    onChange={onChangeInput} onCreate={onCreate} />
+            </Container>
+
         </div>
     );
 }
