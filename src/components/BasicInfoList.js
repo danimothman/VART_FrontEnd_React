@@ -19,7 +19,7 @@ var User = ({ user, onToggle, onRemove }) => {
             <td><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></td>
             <td> {user.email}</td>
             {/* <td> {user.tokenLogo}</td> */}
-            <td> {user.tokenName}</td>
+            <td> <Nav.Link href="/ProjectItem">{user.tokenName}</Nav.Link></td>
             <td> {user.projectType}</td>
             <td> {user.companyName}</td>
             <td> {user.companyEstablishment}</td>

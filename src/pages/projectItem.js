@@ -9,7 +9,7 @@ const projectItem = ({ history }) => {
     return (
         <div className="App">
             <header className="app-header">
-                <ProjectItemScreen />
+                공시정보 상세페이지
             </header>
         </div>
 

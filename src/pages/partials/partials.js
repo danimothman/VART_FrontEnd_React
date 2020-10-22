@@ -19,6 +19,8 @@ function Partials() {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="../projectItemCreate">공시등록_Test</NavDropdown.Item>
                             <NavDropdown.Item href="../projectItemList">공시리스트_Test</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="../projectItem">공시상세정보_Test</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="../Service">서비스</Nav.Link>
                         <NavDropdown title="고객센터" id="collasible-nav-dropdown2">
