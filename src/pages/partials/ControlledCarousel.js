@@ -23,7 +23,7 @@ const ControlledCarouselBanel = ({ history }) => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                    src="../../images/Dawn1.jpg/800x400?text=First slide&bg=373940"
                     alt="Third slide"
                 />
 
@@ -35,7 +35,7 @@ const ControlledCarouselBanel = ({ history }) => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    src="../../images/Dawn1.jpg/800x400?text=First slide&bg=373940"
                     alt="Third slide"
                 />
 

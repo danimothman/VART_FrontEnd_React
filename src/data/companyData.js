@@ -9,7 +9,7 @@ export const initialState = {
             tokenName: "Bitcoin (BTC)",
             projectType: "국가에 속하지 않은 디지털 화폐",
             companyName: "Bitcoin",
-            companyEstablishment: "03 Jan 2009",
+            companyEstablishment: "2009.01.03",
             companyLocation: "(회사 위치)",
             stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
             memberName: "Satoshi Nakamoto",
@@ -36,7 +36,7 @@ export const initialState = {
             tokenName: "Ethereum",
             projectType: "플랫폼",
             companyName: "	Ethereum",
-            companyEstablishment: "25 Jan 2014",
+            companyEstablishment: "2014.01.25",
             companyLocation: "Zug, Switzerland (Ethereum Foundation)",
             stateJurisdiction: "스위스",
             memberName: "Vitalik Buterin",
@@ -88,7 +88,7 @@ export const initialState = {
             tokenName: "Bitcoin (BTC)",
             projectType: "국가에 속하지 않은 디지털 화폐",
             companyName: "Bitcoin",
-            companyEstablishment: "03 Jan 2009",
+            companyEstablishment: "2009.01.03",
             companyLocation: "(회사 위치)",
             stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
             memberName: "Satoshi Nakamoto",
@@ -104,6 +104,7 @@ export const initialState = {
             // mileStone: "mileStone",
             // moveNum: "moveNum",
             // myWallet: "myWallet",
+
             active: true
         },
         {
@@ -114,7 +115,7 @@ export const initialState = {
             tokenName: "Ethereum",
             projectType: "플랫폼",
             companyName: "	Ethereum",
-            companyEstablishment: "25 Jan 2014",
+            companyEstablishment: "2014.01.25",
             companyLocation: "Zug, Switzerland (Ethereum Foundation)",
             stateJurisdiction: "스위스",
             memberName: "Vitalik Buterin",
@@ -166,7 +167,7 @@ export const initialState = {
             tokenName: "Bitcoin (BTC)",
             projectType: "국가에 속하지 않은 디지털 화폐",
             companyName: "Bitcoin",
-            companyEstablishment: "03 Jan 2009",
+            companyEstablishment: "2009.01.03",
             companyLocation: "(회사 위치)",
             stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
             memberName: "Satoshi Nakamoto",
@@ -182,6 +183,7 @@ export const initialState = {
             // mileStone: "mileStone",
             // moveNum: "moveNum",
             // myWallet: "myWallet",
+
             active: true
         },
         {
@@ -192,7 +194,7 @@ export const initialState = {
             tokenName: "Ethereum",
             projectType: "플랫폼",
             companyName: "	Ethereum",
-            companyEstablishment: "25 Jan 2014",
+            companyEstablishment: "2014.01.25",
             companyLocation: "Zug, Switzerland (Ethereum Foundation)",
             stateJurisdiction: "스위스",
             memberName: "Vitalik Buterin",
@@ -244,7 +246,7 @@ export const initialState = {
             tokenName: "Bitcoin (BTC)",
             projectType: "국가에 속하지 않은 디지털 화폐",
             companyName: "Bitcoin",
-            companyEstablishment: "03 Jan 2009",
+            companyEstablishment: "2009.01.03",
             companyLocation: "(회사 위치)",
             stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
             memberName: "Satoshi Nakamoto",
@@ -260,6 +262,7 @@ export const initialState = {
             // mileStone: "mileStone",
             // moveNum: "moveNum",
             // myWallet: "myWallet",
+
             active: true
         }
     ],
@@ -299,7 +302,7 @@ export const CompanyData = [
         tokenName: "Bitcoin (BTC)",
         projectType: "국가에 속하지 않은 디지털 화폐",
         companyName: "Bitcoin",
-        companyEstablishment: "03 Jan 2009",
+        companyEstablishment: "2009.01.03",
         companyLocation: "(회사 위치)",
         stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
         memberName: "Satoshi Nakamoto",
@@ -315,6 +318,7 @@ export const CompanyData = [
         // mileStone: "mileStone",
         // moveNum: "moveNum",
         // myWallet: "myWallet",
+
         active: true
     },
     {
@@ -325,7 +329,7 @@ export const CompanyData = [
         tokenName: "Ethereum",
         projectType: "플랫폼",
         companyName: "	Ethereum",
-        companyEstablishment: "25 Jan 2014",
+        companyEstablishment: "2014.01.25",
         companyLocation: "Zug, Switzerland (Ethereum Foundation)",
         stateJurisdiction: "스위스",
         memberName: "Vitalik Buterin",
@@ -377,7 +381,7 @@ export const CompanyData = [
         tokenName: "Bitcoin (BTC)",
         projectType: "국가에 속하지 않은 디지털 화폐",
         companyName: "Bitcoin",
-        companyEstablishment: "03 Jan 2009",
+        companyEstablishment: "2009.01.03",
         companyLocation: "(회사 위치)",
         stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
         memberName: "Satoshi Nakamoto",
@@ -393,6 +397,7 @@ export const CompanyData = [
         // mileStone: "mileStone",
         // moveNum: "moveNum",
         // myWallet: "myWallet",
+
         active: true
     },
     {
@@ -403,7 +408,7 @@ export const CompanyData = [
         tokenName: "Ethereum",
         projectType: "플랫폼",
         companyName: "	Ethereum",
-        companyEstablishment: "25 Jan 2014",
+        companyEstablishment: "2014.01.25",
         companyLocation: "Zug, Switzerland (Ethereum Foundation)",
         stateJurisdiction: "스위스",
         memberName: "Vitalik Buterin",
@@ -455,7 +460,7 @@ export const CompanyData = [
         tokenName: "Bitcoin (BTC)",
         projectType: "국가에 속하지 않은 디지털 화폐",
         companyName: "Bitcoin",
-        companyEstablishment: "03 Jan 2009",
+        companyEstablishment: "2009.01.03",
         companyLocation: "(회사 위치)",
         stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
         memberName: "Satoshi Nakamoto",
@@ -471,6 +476,7 @@ export const CompanyData = [
         // mileStone: "mileStone",
         // moveNum: "moveNum",
         // myWallet: "myWallet",
+
         active: true
     },
     {
@@ -481,7 +487,7 @@ export const CompanyData = [
         tokenName: "Ethereum",
         projectType: "플랫폼",
         companyName: "	Ethereum",
-        companyEstablishment: "25 Jan 2014",
+        companyEstablishment: "2014.01.25",
         companyLocation: "Zug, Switzerland (Ethereum Foundation)",
         stateJurisdiction: "스위스",
         memberName: "Vitalik Buterin",
@@ -533,7 +539,7 @@ export const CompanyData = [
         tokenName: "Bitcoin (BTC)",
         projectType: "국가에 속하지 않은 디지털 화폐",
         companyName: "Bitcoin",
-        companyEstablishment: "03 Jan 2009",
+        companyEstablishment: "2009.01.03",
         companyLocation: "(회사 위치)",
         stateJurisdiction: "(법인 관할자(Corporate jurisdiction))",
         memberName: "Satoshi Nakamoto",
@@ -549,6 +555,7 @@ export const CompanyData = [
         // mileStone: "mileStone",
         // moveNum: "moveNum",
         // myWallet: "myWallet",
+
         active: true
     }
 ]
