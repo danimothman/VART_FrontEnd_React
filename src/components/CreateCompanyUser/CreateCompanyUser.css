@@ -6,12 +6,12 @@
 
 .ccu-form-label{
     text-align: left;
-    margin-left:5px
+    margin-left:5px;
 }
 
 .ccu-form-label-text{
     text-align: left;
-    margin-left:5px
+    margin-left:5px;
 }
 
 @media (min-width: 576px){

@@ -12,12 +12,13 @@
 
 .scu-form-label{
     text-align: right;
-    margin-left:5px
+    margin-left:5px;
 }
 
 .scu-form-label-text{
     text-align: left;
-    margin-left:5px
+    margin-left:5px;
+    font-size: 11px;
 }
 
 @media (min-width: 576px){
