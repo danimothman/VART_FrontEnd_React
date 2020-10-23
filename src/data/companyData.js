@@ -1,5 +1,5 @@
 export const initialState = {
-
+    //메인 가짜 데이터
     users: [
         {
             id: 1,
