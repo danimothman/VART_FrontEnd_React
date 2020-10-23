@@ -7,7 +7,6 @@
     background-color: white;
     margin: 32px auto 0;
     width: 100%;
-    font-size: 11px;
   }
 
 .scu-form-label{
@@ -18,7 +17,8 @@
 .scu-form-label-text{
     text-align: left;
     margin-left:5px;
-    font-size: 11px;
+    font-size: 12px;
+    
 }
 
 @media (min-width: 576px){
