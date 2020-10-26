@@ -31,13 +31,6 @@ function ProjectItemDetailPageScreen() {
         developerLeaderName: '',
         developerLeaderEducation: '',
         developerLeaderExperience: '',
-        // mkName: '',
-        // mkLocation: '',
-        // mkCpdate: '',
-        // mkFounder: '',
-        // mileStone: '',
-        // moveNum: '',
-        // myWallet: ''
     })
 
     const { username, email,
@@ -46,8 +39,6 @@ function ProjectItemDetailPageScreen() {
         companyName, companyEstablishment, companyLocation, stateJurisdiction,
         memberName, memberEducation, memberExperience,
         developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-        // mkName, mkLocation, mkCpdate, mkFounder,
-        // mileStone, moveNum, myWallet
     } = inputs
     const nextId = useRef(4)
 
@@ -73,8 +64,6 @@ function ProjectItemDetailPageScreen() {
             companyName, companyEstablishment, companyLocation, stateJurisdiction,
             memberName, memberEducation, memberExperience,
             developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-            // mkName, mkLocation, mkCpdate, mkFounder,
-            // mileStone, moveNum, myWallet
         }
         setUsers([...users, user])
 
@@ -94,14 +83,7 @@ function ProjectItemDetailPageScreen() {
             memberExperience: '',
             developerLeaderName: '',
             developerLeaderEducation: '',
-            developerLeaderExperience: '',
-            // mkName: '',
-            // mkLocation: '',
-            // mkCpdate: '',
-            // mkFounder: '',
-            // mileStone: '',
-            // moveNum: '',
-            // myWallet: ''
+            developerLeaderExperience: ''
         })
         //==========JSON변환 코드s==========
         const data = {

@@ -18,14 +18,6 @@ export const initialState = {
             developerLeaderName: "Satoshi Nakamoto",
             developerLeaderEducation: "(개발자 학력)",
             developerLeaderExperience: "(개발자 경력)",
-            // mkName: "mkName",
-            // mkLocation: "mkLocation",
-            // mkCpdate: "mkCpdate",
-            // mkFounder: "mkFounder",
-            // mileStone: "mileStone",
-            // moveNum: "moveNum",
-            // myWallet: "myWallet",
-
             active: true
         },
         {
@@ -45,13 +37,6 @@ export const initialState = {
             developerLeaderName: "Shahan Khatchadourian",
             developerLeaderEducation: "University of Toronto / Ph.D, Computer Science",
             developerLeaderExperience: "PegaSys / Co-founder",
-            // mkName: "mkName2",
-            // mkLocation: "mkLocation2",
-            // mkCpdate: "mkCpdate2",
-            // mkFounder: "mkFounder2",
-            // mileStone: "mileStone2",
-            // moveNum: "moveNum2",
-            // myWallet: "myWallet2",
             active: false
         },
         {
@@ -71,13 +56,6 @@ export const initialState = {
             developerLeaderName: "Steve Ellis",
             developerLeaderEducation: "New York University / BS, Computer Science",
             developerLeaderExperience: "Secure Asset Exchange / Cofounder and Software Engineer, Pivotal Labs / Software Engineer",
-            // mkName: "mkName3",
-            // mkLocation: "mkLocation3",
-            // mkCpdate: "mkCpdate3",
-            // mkFounder: "mkFounder3",
-            // mileStone: "mileStone3",
-            // moveNum: "moveNum3",
-            // myWallet: "myWallet3",
             active: false
         },
         {
@@ -97,14 +75,6 @@ export const initialState = {
             developerLeaderName: "Satoshi Nakamoto",
             developerLeaderEducation: "(개발자 학력)",
             developerLeaderExperience: "(개발자 경력)",
-            // mkName: "mkName",
-            // mkLocation: "mkLocation",
-            // mkCpdate: "mkCpdate",
-            // mkFounder: "mkFounder",
-            // mileStone: "mileStone",
-            // moveNum: "moveNum",
-            // myWallet: "myWallet",
-
             active: true
         },
         {
@@ -124,13 +94,6 @@ export const initialState = {
             developerLeaderName: "Shahan Khatchadourian",
             developerLeaderEducation: "University of Toronto / Ph.D, Computer Science",
             developerLeaderExperience: "PegaSys / Co-founder",
-            // mkName: "mkName2",
-            // mkLocation: "mkLocation2",
-            // mkCpdate: "mkCpdate2",
-            // mkFounder: "mkFounder2",
-            // mileStone: "mileStone2",
-            // moveNum: "moveNum2",
-            // myWallet: "myWallet2",
             active: false
         },
         {
@@ -150,13 +113,6 @@ export const initialState = {
             developerLeaderName: "Steve Ellis",
             developerLeaderEducation: "New York University / BS, Computer Science",
             developerLeaderExperience: "Secure Asset Exchange / Cofounder and Software Engineer, Pivotal Labs / Software Engineer",
-            // mkName: "mkName3",
-            // mkLocation: "mkLocation3",
-            // mkCpdate: "mkCpdate3",
-            // mkFounder: "mkFounder3",
-            // mileStone: "mileStone3",
-            // moveNum: "moveNum3",
-            // myWallet: "myWallet3",
             active: false
         },
         {
@@ -176,14 +132,6 @@ export const initialState = {
             developerLeaderName: "Satoshi Nakamoto",
             developerLeaderEducation: "(개발자 학력)",
             developerLeaderExperience: "(개발자 경력)",
-            // mkName: "mkName",
-            // mkLocation: "mkLocation",
-            // mkCpdate: "mkCpdate",
-            // mkFounder: "mkFounder",
-            // mileStone: "mileStone",
-            // moveNum: "moveNum",
-            // myWallet: "myWallet",
-
             active: true
         },
         {
@@ -203,13 +151,6 @@ export const initialState = {
             developerLeaderName: "Shahan Khatchadourian",
             developerLeaderEducation: "University of Toronto / Ph.D, Computer Science",
             developerLeaderExperience: "PegaSys / Co-founder",
-            // mkName: "mkName2",
-            // mkLocation: "mkLocation2",
-            // mkCpdate: "mkCpdate2",
-            // mkFounder: "mkFounder2",
-            // mileStone: "mileStone2",
-            // moveNum: "moveNum2",
-            // myWallet: "myWallet2",
             active: false
         },
         {
@@ -229,13 +170,6 @@ export const initialState = {
             developerLeaderName: "Steve Ellis",
             developerLeaderEducation: "New York University / BS, Computer Science",
             developerLeaderExperience: "Secure Asset Exchange / Cofounder and Software Engineer, Pivotal Labs / Software Engineer",
-            // mkName: "mkName3",
-            // mkLocation: "mkLocation3",
-            // mkCpdate: "mkCpdate3",
-            // mkFounder: "mkFounder3",
-            // mileStone: "mileStone3",
-            // moveNum: "moveNum3",
-            // myWallet: "myWallet3",
             active: false
         },
         {
@@ -255,14 +189,6 @@ export const initialState = {
             developerLeaderName: "Satoshi Nakamoto",
             developerLeaderEducation: "(개발자 학력)",
             developerLeaderExperience: "(개발자 경력)",
-            // mkName: "mkName",
-            // mkLocation: "mkLocation",
-            // mkCpdate: "mkCpdate",
-            // mkFounder: "mkFounder",
-            // mileStone: "mileStone",
-            // moveNum: "moveNum",
-            // myWallet: "myWallet",
-
             active: true
         }
     ],
@@ -283,13 +209,6 @@ export const initialState = {
         developerLeaderName: '',
         developerLeaderEducation: '',
         developerLeaderExperience: '',
-        // mkName: '',
-        // mkLocation: '',
-        // mkCpdate: '',
-        // mkFounder: '',
-        // mileStone: '',
-        // moveNum: '',
-        // myWallet: ''
     }
 }
 
@@ -311,14 +230,6 @@ export const CompanyData = [
         developerLeaderName: "Satoshi Nakamoto",
         developerLeaderEducation: "(개발자 학력)",
         developerLeaderExperience: "(개발자 경력)",
-        // mkName: "mkName",
-        // mkLocation: "mkLocation",
-        // mkCpdate: "mkCpdate",
-        // mkFounder: "mkFounder",
-        // mileStone: "mileStone",
-        // moveNum: "moveNum",
-        // myWallet: "myWallet",
-
         active: true
     },
     {
@@ -338,13 +249,6 @@ export const CompanyData = [
         developerLeaderName: "Shahan Khatchadourian",
         developerLeaderEducation: "University of Toronto / Ph.D, Computer Science",
         developerLeaderExperience: "PegaSys / Co-founder",
-        // mkName: "mkName2",
-        // mkLocation: "mkLocation2",
-        // mkCpdate: "mkCpdate2",
-        // mkFounder: "mkFounder2",
-        // mileStone: "mileStone2",
-        // moveNum: "moveNum2",
-        // myWallet: "myWallet2",
         active: false
     },
     {
@@ -364,13 +268,7 @@ export const CompanyData = [
         developerLeaderName: "Steve Ellis",
         developerLeaderEducation: "New York University / BS, Computer Science",
         developerLeaderExperience: "Secure Asset Exchange / Cofounder and Software Engineer, Pivotal Labs / Software Engineer",
-        // mkName: "mkName3",
-        // mkLocation: "mkLocation3",
-        // mkCpdate: "mkCpdate3",
-        // mkFounder: "mkFounder3",
-        // mileStone: "mileStone3",
-        // moveNum: "moveNum3",
-        // myWallet: "myWallet3",
+
         active: false
     },
     {
@@ -390,14 +288,6 @@ export const CompanyData = [
         developerLeaderName: "Satoshi Nakamoto",
         developerLeaderEducation: "(개발자 학력)",
         developerLeaderExperience: "(개발자 경력)",
-        // mkName: "mkName",
-        // mkLocation: "mkLocation",
-        // mkCpdate: "mkCpdate",
-        // mkFounder: "mkFounder",
-        // mileStone: "mileStone",
-        // moveNum: "moveNum",
-        // myWallet: "myWallet",
-
         active: true
     },
     {
@@ -417,13 +307,6 @@ export const CompanyData = [
         developerLeaderName: "Shahan Khatchadourian",
         developerLeaderEducation: "University of Toronto / Ph.D, Computer Science",
         developerLeaderExperience: "PegaSys / Co-founder",
-        // mkName: "mkName2",
-        // mkLocation: "mkLocation2",
-        // mkCpdate: "mkCpdate2",
-        // mkFounder: "mkFounder2",
-        // mileStone: "mileStone2",
-        // moveNum: "moveNum2",
-        // myWallet: "myWallet2",
         active: false
     },
     {
@@ -443,13 +326,6 @@ export const CompanyData = [
         developerLeaderName: "Steve Ellis",
         developerLeaderEducation: "New York University / BS, Computer Science",
         developerLeaderExperience: "Secure Asset Exchange / Cofounder and Software Engineer, Pivotal Labs / Software Engineer",
-        // mkName: "mkName3",
-        // mkLocation: "mkLocation3",
-        // mkCpdate: "mkCpdate3",
-        // mkFounder: "mkFounder3",
-        // mileStone: "mileStone3",
-        // moveNum: "moveNum3",
-        // myWallet: "myWallet3",
         active: false
     },
     {
@@ -469,14 +345,6 @@ export const CompanyData = [
         developerLeaderName: "Satoshi Nakamoto",
         developerLeaderEducation: "(개발자 학력)",
         developerLeaderExperience: "(개발자 경력)",
-        // mkName: "mkName",
-        // mkLocation: "mkLocation",
-        // mkCpdate: "mkCpdate",
-        // mkFounder: "mkFounder",
-        // mileStone: "mileStone",
-        // moveNum: "moveNum",
-        // myWallet: "myWallet",
-
         active: true
     },
     {
@@ -496,13 +364,6 @@ export const CompanyData = [
         developerLeaderName: "Shahan Khatchadourian",
         developerLeaderEducation: "University of Toronto / Ph.D, Computer Science",
         developerLeaderExperience: "PegaSys / Co-founder",
-        // mkName: "mkName2",
-        // mkLocation: "mkLocation2",
-        // mkCpdate: "mkCpdate2",
-        // mkFounder: "mkFounder2",
-        // mileStone: "mileStone2",
-        // moveNum: "moveNum2",
-        // myWallet: "myWallet2",
         active: false
     },
     {
@@ -522,13 +383,6 @@ export const CompanyData = [
         developerLeaderName: "Steve Ellis",
         developerLeaderEducation: "New York University / BS, Computer Science",
         developerLeaderExperience: "Secure Asset Exchange / Cofounder and Software Engineer, Pivotal Labs / Software Engineer",
-        // mkName: "mkName3",
-        // mkLocation: "mkLocation3",
-        // mkCpdate: "mkCpdate3",
-        // mkFounder: "mkFounder3",
-        // mileStone: "mileStone3",
-        // moveNum: "moveNum3",
-        // myWallet: "myWallet3",
         active: false
     },
     {
@@ -548,14 +402,6 @@ export const CompanyData = [
         developerLeaderName: "Satoshi Nakamoto",
         developerLeaderEducation: "(개발자 학력)",
         developerLeaderExperience: "(개발자 경력)",
-        // mkName: "mkName",
-        // mkLocation: "mkLocation",
-        // mkCpdate: "mkCpdate",
-        // mkFounder: "mkFounder",
-        // mileStone: "mileStone",
-        // moveNum: "moveNum",
-        // myWallet: "myWallet",
-
         active: true
     }
 ]

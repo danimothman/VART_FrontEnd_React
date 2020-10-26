@@ -15,16 +15,19 @@ var User = ({ user, onToggle, onRemove }) => {
 
     return (
         <div>
+
             <Container className="App-background-color">
-                <div className="scu-body">
-                    <Form.Group as={Row} controlId="">
-                        <Form.Label column sm={2} className="ccu-form-label">계정정보</Form.Label>
+                <div>
+                    <Form.Group as={Row} controlId="" className="scu-body-title">
+                        <Form.Label column sm={2} className="scu-form-label">계정정보</Form.Label>
                         <Col sm={10}>
                             <Form.Text>
 
                             </Form.Text>
                         </Col>
                     </Form.Group>
+                </div>
+                <div className="scu-body">
                     <Form.Group as={Row} controlId="">
                         <Form.Label column sm={2} className="scu-form-label-text">아이디 값</Form.Label>
                         <Col sm={10}>
@@ -43,19 +46,20 @@ var User = ({ user, onToggle, onRemove }) => {
                             <Form.Text>{user.email}</Form.Text>
                         </Col>
                     </Form.Group>
-
-
                 </div>
 
-                <div className="scu-body">
-                    <Form.Group as={Row} controlId="">
-                        <Form.Label column sm={2} className="ccu-form-label">토큰정보</Form.Label>
+                <div>
+                    <Form.Group as={Row} controlId="" className="scu-body-title">
+                        <Form.Label column sm={2} className="scu-form-label">토큰정보</Form.Label>
                         <Col sm={10}>
                             <Form.Text>
 
                             </Form.Text>
                         </Col>
                     </Form.Group>
+                </div>
+                <div className="scu-body">
+
                     {/* <Form.Group as={Row} controlId="">
                 <Form.Label column sm={2} className="scu-form-label-text">토큰 로고</Form.Label>
                 <Col sm={10}>
@@ -76,15 +80,18 @@ var User = ({ user, onToggle, onRemove }) => {
                     </Form.Group>
                 </div>
 
-                <div className="scu-body">
-                    <Form.Group as={Row} controlId="">
-                        <Form.Label column sm={2} className="ccu-form-label">공시정보</Form.Label>
+
+                <div>
+                    <Form.Group as={Row} controlId="" className="scu-body-title">
+                        <Form.Label column sm={2} className="scu-form-label">공시정보</Form.Label>
                         <Col sm={10}>
                             <Form.Text>
 
                             </Form.Text>
                         </Col>
                     </Form.Group>
+                </div>
+                <div className="scu-body">
                     <Form.Group as={Row} controlId="">
                         <Form.Label column sm={2} className="scu-form-label-text">회사 이름</Form.Label>
                         <Col sm={10}>
@@ -111,16 +118,17 @@ var User = ({ user, onToggle, onRemove }) => {
                     </Form.Group>
                 </div>
 
-
-                <div className="scu-body">
-                    <Form.Group as={Row} controlId="">
-                        <Form.Label column sm={2} className="ccu-form-label">경영진</Form.Label>
+                <div>
+                    <Form.Group as={Row} controlId="" className="scu-body-title">
+                        <Form.Label column sm={2} className="scu-form-label">경영진</Form.Label>
                         <Col sm={10}>
                             <Form.Text>
 
                             </Form.Text>
                         </Col>
                     </Form.Group>
+                </div>
+                <div className="scu-body">
                     <Form.Group as={Row} controlId="">
                         <Form.Label column sm={2} className="scu-form-label-text">경영진 이름</Form.Label>
                         <Col sm={10}>
@@ -141,15 +149,17 @@ var User = ({ user, onToggle, onRemove }) => {
                     </Form.Group>
                 </div>
 
-                <div className="scu-body">
-                    <Form.Group as={Row} controlId="">
-                        <Form.Label column sm={2} className="ccu-form-label">개발자리더</Form.Label>
+                <div>
+                    <Form.Group as={Row} controlId="" className="scu-body-title">
+                        <Form.Label column sm={2} className="scu-form-label">개발자리더</Form.Label>
                         <Col sm={10}>
                             <Form.Text>
 
                             </Form.Text>
                         </Col>
                     </Form.Group>
+                </div>
+                <div className="scu-body">
                     <Form.Group as={Row} controlId="">
                         <Form.Label column sm={2} className="scu-form-label-text">개발자 이름</Form.Label>
                         <Col sm={10}>
@@ -169,7 +179,9 @@ var User = ({ user, onToggle, onRemove }) => {
                         </Col>
                     </Form.Group>
                 </div>
-                <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button>
+                <div>
+                    <Button variant="Dark" className="scu-form-button" onClick={() => onRemove(user.id)} >삭제</Button>
+                </div>
             </Container>
         </div>
 

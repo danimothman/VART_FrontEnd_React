@@ -14,51 +14,53 @@ function CreateCompanyUser({
 }) {
     return (
         <div>
-            <div className="ccu-body">
-
-
-
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">계정정보</Form.Label>
+            <div>
+                <Form.Group as={Row} controlId="" className="ccu-body-title">
+                    <Form.Label column sm={2} className="">계정정보</Form.Label>
                     <Col sm={10}>
                         <Form.Text>
 
                         </Form.Text>
                     </Col>
                 </Form.Group>
-                <Form.Group as={Row} controlId="formBasicEmail">
-                    <Form.Label column sm={2} className="ccu-form-label">계정명</Form.Label>
+                <div className="ccu-body">
+                    <Form.Group as={Row} controlId="formBasicEmail" className="">
+                        <Form.Label column sm={2} className="ccu-form-label">계정명</Form.Label>
+                        <Col sm={10}>
+                            <Form.Control
+                                name="username"
+                                placeholder="계정명"
+                                onChange={onChange}
+                                value={user}
+                            />
+                        </Col>
+                    </Form.Group>
+                    <Form.Group as={Row} controlId="">
+                        <Form.Label column sm={2} className="ccu-form-label">이메일</Form.Label>
+                        <Col sm={10}>
+                            <Form.Control
+                                name="email"
+                                placeholder="이메일"
+                                onChange={onChange}
+                                value={useremail}
+                            />
+                        </Col>
+                    </Form.Group>
+                </div>
+            </div>
+
+
+            <div>
+                <Form.Group as={Row} controlId="" className="ccu-body-title">
+                    <Form.Label column sm={2} className="">토큰정보</Form.Label>
                     <Col sm={10}>
-                        <Form.Control
-                            name="username"
-                            placeholder="계정명"
-                            onChange={onChange}
-                            value={user}
-                        />
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">이메일</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="email"
-                            placeholder="이메일"
-                            onChange={onChange}
-                            value={useremail}
-                        />
+                        <Form.Text>
+
+                        </Form.Text>
                     </Col>
                 </Form.Group>
             </div>
-
             <div className="ccu-body">
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">토큰정보</Form.Label>
-                    <Col sm={10}>
-                        <Form.Text>
-
-                        </Form.Text>
-                    </Col>
-                </Form.Group>
                 {/* <Form.Group as={Row} controlId="">
                     <Form.Label column sm={2} className="ccu-form-label">토큰로고</Form.Label>
                     <Col sm={10}>
@@ -94,15 +96,17 @@ function CreateCompanyUser({
                 </Form.Group>
             </div>
 
-            <div className="ccu-body">
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">공시정보</Form.Label>
+            <div>
+                <Form.Group as={Row} controlId="" className="ccu-body-title">
+                    <Form.Label column sm={2} className="">공시정보</Form.Label>
                     <Col sm={10}>
                         <Form.Text>
 
                         </Form.Text>
                     </Col>
                 </Form.Group>
+            </div>
+            <div className="ccu-body">
                 <Form.Group as={Row} controlId="">
                     <Form.Label column sm={2} className="ccu-form-label">회사이름</Form.Label>
                     <Col sm={10}>
@@ -149,15 +153,17 @@ function CreateCompanyUser({
                 </Form.Group>
             </div>
 
-            <div className="ccu-body">
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">경영진</Form.Label>
+            <div>
+                <Form.Group as={Row} controlId="" className="ccu-body-title">
+                    <Form.Label column sm={2} className="">경영진</Form.Label>
                     <Col sm={10}>
                         <Form.Text>
 
                         </Form.Text>
                     </Col>
                 </Form.Group>
+            </div>
+            <div className="ccu-body">
                 <Form.Group as={Row} controlId="">
                     <Form.Label column sm={2} className="ccu-form-label">경영진이름</Form.Label>
                     <Col sm={10}>
@@ -193,15 +199,17 @@ function CreateCompanyUser({
                 </Form.Group>
             </div>
 
-            <div className="ccu-body">
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">개발자리더</Form.Label>
+            <div>
+                <Form.Group as={Row} controlId="" className="ccu-body-title">
+                    <Form.Label column sm={2} className="">개발자리더</Form.Label>
                     <Col sm={10}>
                         <Form.Text>
 
                         </Form.Text>
                     </Col>
                 </Form.Group>
+            </div>
+            <div className="ccu-body">
                 <Form.Group as={Row} controlId="">
                     <Form.Label column sm={2} className="ccu-form-label">개발자이름</Form.Label>
                     <Col sm={10}>
@@ -236,117 +244,9 @@ function CreateCompanyUser({
                     </Col>
                 </Form.Group>
             </div>
-
-            <div className="ccu-body">
-                {/*
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">Onchain</Form.Label>
-                    <Col sm={10}>
-                        <Form.Text>
-
-                        </Form.Text>
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓이름</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="mkName"
-                            placeholder="마켓이름"
-                            onChange={onChange}
-                            value={mkname}
-                        />
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓위치</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="mkLocation"
-                            placeholder="마켓위치"
-                            onChange={onChange}
-                            value={mklocation}
-                        />
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓cpdate</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="mkCpdate"
-                            placeholder="마켓cpdate"
-                            onChange={onChange}
-                            value={mkcpdate}
-                        />
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="mkFounder"
-                            placeholder="마켓설립자"
-                            onChange={onChange}
-                            value={mkfounder}
-                        />
-                    </Col>
-                </Form.Group> */}
+            <div>
+                <Button className="ccu-form-button" onClick={onCreate} >공시 정보 등록</Button>
             </div>
-
-            <div className="ccu-body">
-                {/*
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">지갑정보</Form.Label>
-                    <Col sm={10}>
-                        <Form.Text>
-
-                        </Form.Text>
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="mileStone"
-                            placeholder="milestone"
-                            onChange={onChange}
-                            value={milestone}
-                        />
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="moveNum"
-                            placeholder="movenum"
-                            onChange={onChange}
-                            value={movenum}
-                        />
-                    </Col>
-                </Form.Group>
-                <Form.Group as={Row} controlId="">
-                    <Form.Label column sm={2} className="ccu-form-label">마켓설립자</Form.Label>
-                    <Col sm={10}>
-                        <Form.Control
-                            name="myWallet"
-                            placeholder="wallet"
-                            onChange={onChange}
-                            value={mywallet}
-                        />
-                    </Col>
-                </Form.Group> */}
-            </div>
-
-
-
-
-
-
-
-            <button onClick={onCreate} >공시 정보 등록</button>
-
-            {/* <button onClick={onCreate} >공시 정보 등록</button> */}
         </div>
     )
 }

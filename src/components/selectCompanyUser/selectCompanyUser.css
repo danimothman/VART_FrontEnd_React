@@ -1,23 +1,35 @@
 
 .scu-body-background-color {
     background-color:#f8f9fa;
+    /* margin-top: 20px; */
+    
   }
 
 .scu-body {
     background-color: white;
-    margin: 32px auto 0;
+    /* margin: 32px auto 0; */
     width: 100%;
+    padding: 5px 5px 0px 5px;
+    
   }
 
+  .scu-body-title {
+    /* margin: 32px auto 0; */
+    margin: 20px 50px 0px 0px;
+  }
+  .scu-form-button{
+    margin: 20px 50px 20px 0px;
+}
 .scu-form-label{
     text-align: right;
     margin-left:5px;
+    font-size: 20px;
 }
 
 .scu-form-label-text{
     text-align: left;
     margin-left:5px;
-    font-size: 12px;
+    font-size: 14px;
     
 }
 

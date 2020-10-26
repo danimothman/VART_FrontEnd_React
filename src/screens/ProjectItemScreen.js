@@ -3,7 +3,7 @@ import React, { useState, useMemo, useCallback, useRef } from 'react'
 //회사 가짜 데이터 공시정보 입력경로
 import { CompanyData } from './../data/companyData'
 //공시 정보 리스트 출력 경로
-import BasicInfoList from '../components/BasicInfoList'
+import BasicInfoList from '../components/BasicInfoList/BasicInfoList'
 //공시정보 작성 경로
 import CreateCompanyUser from '../components/CreateCompanyUser'
 import { Container } from 'react-bootstrap'
@@ -31,13 +31,6 @@ function ProjectItemScreen() {
         developerLeaderName: '',
         developerLeaderEducation: '',
         developerLeaderExperience: '',
-        // mkName: '',
-        // mkLocation: '',
-        // mkCpdate: '',
-        // mkFounder: '',
-        // mileStone: '',
-        // moveNum: '',
-        // myWallet: ''
     })
 
     const { username, email,
@@ -46,8 +39,6 @@ function ProjectItemScreen() {
         companyName, companyEstablishment, companyLocation, stateJurisdiction,
         memberName, memberEducation, memberExperience,
         developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-        // mkName, mkLocation, mkCpdate, mkFounder,
-        // mileStone, moveNum, myWallet
     } = inputs
     const nextId = useRef(4)
 
@@ -73,8 +64,6 @@ function ProjectItemScreen() {
             companyName, companyEstablishment, companyLocation, stateJurisdiction,
             memberName, memberEducation, memberExperience,
             developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-            // mkName, mkLocation, mkCpdate, mkFounder,
-            // mileStone, moveNum, myWallet
         }
         setUsers([...users, user])
 
@@ -95,13 +84,6 @@ function ProjectItemScreen() {
             developerLeaderName: '',
             developerLeaderEducation: '',
             developerLeaderExperience: '',
-            // mkName: '',
-            // mkLocation: '',
-            // mkCpdate: '',
-            // mkFounder: '',
-            // mileStone: '',
-            // moveNum: '',
-            // myWallet: ''
         })
         //==========JSON변환 코드s==========
         const data = {

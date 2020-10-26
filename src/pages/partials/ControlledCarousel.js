@@ -1,6 +1,7 @@
 
 import React, { useState, render } from 'react';
 import '../../App.css';
+import '../../images/Dawn1.jpg';
 // import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
 
@@ -12,7 +13,7 @@ const ControlledCarouselBanel = ({ history }) => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="../../images/Dawn1.jpg/800x400?text=First slide&bg=373940"
+                    src={'../../images/Dawn1.jpg'}
                     alt="First slide"
                 />
                 <Carousel.Caption>

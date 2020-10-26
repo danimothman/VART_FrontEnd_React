@@ -18,13 +18,6 @@ export const initialState = {
             developerLeaderName: "Satoshi Nakamoto",
             developerLeaderEducation: "(개발자 학력)",
             developerLeaderExperience: "(개발자 경력)",
-            // mkName: "mkName",
-            // mkLocation: "mkLocation",
-            // mkCpdate: "mkCpdate",
-            // mkFounder: "mkFounder",
-            // mileStone: "mileStone",
-            // moveNum: "moveNum",
-            // myWallet: "myWallet",
             active: true
         }
     ],
@@ -45,13 +38,6 @@ export const initialState = {
         developerLeaderName: '',
         developerLeaderEducation: '',
         developerLeaderExperience: '',
-        // mkName: '',
-        // mkLocation: '',
-        // mkCpdate: '',
-        // mkFounder: '',
-        // mileStone: '',
-        // moveNum: '',
-        // myWallet: ''
     }
 }
 
@@ -73,13 +59,6 @@ export const companyData2 = [
         developerLeaderName: "Satoshi Nakamoto",
         developerLeaderEducation: "(개발자 학력)",
         developerLeaderExperience: "(개발자 경력)",
-        // mkName: "mkName",
-        // mkLocation: "mkLocation",
-        // mkCpdate: "mkCpdate",
-        // mkFounder: "mkFounder",
-        // mileStone: "mileStone",
-        // moveNum: "moveNum",
-        // myWallet: "myWallet",
         active: true
     }
 ]

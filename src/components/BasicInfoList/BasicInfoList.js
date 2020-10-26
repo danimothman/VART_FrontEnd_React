@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { Navbar, Container, Button, FormControl, Nav, Form, NavDropdown, Table } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
-import '../App.css'
+import '../../App.css'
 
 var User = ({ user, onToggle, onRemove }) => {
     useEffect(() => {
@@ -16,29 +16,22 @@ var User = ({ user, onToggle, onRemove }) => {
 
     return (
         <tr className="table-font">
-            <td Key={user.id} style={{}}>{user.id}</td>
-            {/* <td><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></td>
-            <td> {user.email}</td> */}
-            {/* <td> {user.tokenLogo}</td> */}
+            <td Key={user.id} style={{}}> <Nav.Item className="">{user.id}</Nav.Item></td>
+            {/* <td> <Nav.Item className=""><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></Nav.Item></td>
+            <td> <Nav.Item className="">{user.email}</Nav.Item></td> */}
+            {/* <td> <Nav.Item className="">{user.tokenLogo}</Nav.Item></td> */}
             <td> <Nav.Link href="/ProjectItem">{user.tokenName}</Nav.Link></td>
-            {/* <td> {user.projectType}</td> */}
-            <td> {user.companyName}</td>
-            <td> {user.companyEstablishment}</td>
-            {/* <td> {user.companyLocation}</td>
-            <td> {user.stateJurisdiction}</td>
-            <td> {user.memberName}</td>
-            <td> {user.memberEducation}</td>
-            <td> {user.memberExperience}</td>
-            <td> {user.developerLeaderName}</td>
-            <td> {user.developerLeaderEducation}</td>
-            <td> {user.developerLeaderExperience}</td> */}
-            {/* <td> {user.mkName}</td>
-                <td> {user.mkLocation}</td>
-                <td> {user.mkCpdate}</td>
-                <td> {user.mkFounder}</td>
-                <td> {user.mileStone}</td>
-                <td> {user.moveNum}</td>
-                <td> {user.myWallet}</td> */}
+            {/* <td> <Nav.Item className="">{user.projectType}</Nav.Item></td> */}
+            <td> <Nav.Item className="">{user.companyName}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.companyEstablishment}</Nav.Item></td>
+            {/* <td> <Nav.Item className="">{user.companyLocation}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.stateJurisdiction}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.memberName}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.memberEducation}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.memberExperience}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.developerLeaderName}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.developerLeaderEducation}</Nav.Item></td>
+            <td> <Nav.Item className="">{user.developerLeaderExperience}</Nav.Item></td> */}
             {/* <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button> */}
         </tr>
 
@@ -48,7 +41,7 @@ function BasicInfoList({ users, onToggle, onRemove }) {
     return (
         <div>
             <Table responsive="sm">
-                <thead>
+                <thead className="table-font-title">
                     <tr>
                         <th>순번</th>
                         {/* <th>이름</th>
