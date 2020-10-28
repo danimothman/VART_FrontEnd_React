@@ -22,10 +22,41 @@
     font-size: 12px;
 }
 
+/* 입력바 스타일 */
+.ccu-form-input{
+    text-align: left;
+    margin-left:5px;
+    font-size: 12px;
+}
 .ccu-form-label-text{
     text-align: left;
     margin-left:5px;
 }
+
+
+/* #searching input {
+    width: 700px;
+    height: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 0;
+    background: #eee;
+    font-size: 17px;
+    transition: all 0.5s;
+}
+
+#searching input:hover {
+    background: #ccc;
+}
+
+#searching input:focus {
+    outline: none;
+} */
+
+
+
+
 
 @media (min-width: 576px){
     .ccu-form-label {

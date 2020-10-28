@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { Navbar, Container, Button, FormControl, Nav, Form, NavDropdown, Table } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 import '../../App.css'
+import './BasicInfoList.css'
 
 var User = ({ user, onToggle, onRemove }) => {
     useEffect(() => {
@@ -16,22 +17,22 @@ var User = ({ user, onToggle, onRemove }) => {
 
     return (
         <tr className="table-font">
-            <td Key={user.id} style={{}}> <Nav.Item className="">{user.id}</Nav.Item></td>
-            {/* <td> <Nav.Item className=""><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></Nav.Item></td>
-            <td> <Nav.Item className="">{user.email}</Nav.Item></td> */}
-            {/* <td> <Nav.Item className="">{user.tokenLogo}</Nav.Item></td> */}
-            <td> <Nav.Link href="/ProjectItem">{user.tokenName}</Nav.Link></td>
-            {/* <td> <Nav.Item className="">{user.projectType}</Nav.Item></td> */}
-            <td> <Nav.Item className="">{user.companyName}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.companyEstablishment}</Nav.Item></td>
-            {/* <td> <Nav.Item className="">{user.companyLocation}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.stateJurisdiction}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.memberName}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.memberEducation}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.memberExperience}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.developerLeaderName}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.developerLeaderEducation}</Nav.Item></td>
-            <td> <Nav.Item className="">{user.developerLeaderExperience}</Nav.Item></td> */}
+            <td Key={user.id} style={{}} className=""> <Nav.Item className="bil-form">{user.id}</Nav.Item></td>
+            {/* <td> <Nav.Item className="bil-formㄴ"><b style={{ cursor: 'pointer', color: user.active ? 'green' : 'blue' }} onClick={() => onToggle(user.id)}>{user.username}</b></Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.email}</Nav.Item></td> */}
+            {/* <td> <Nav.Item className="bil-form">{user.tokenLogo}</Nav.Item></td> */}
+            <td> <Nav.Link className="bil-form" href="/ProjectItem">{user.tokenName}</Nav.Link></td>
+            {/* <td> <Nav.Item className="bil-form">{user.projectType}</Nav.Item></td> */}
+            <td> <Nav.Item className="bil-form">{user.companyName}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.companyEstablishment}</Nav.Item></td>
+            {/* <td> <Nav.Item className="bil-form">{user.companyLocation}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.stateJurisdiction}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.memberName}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.memberEducation}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.memberExperience}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.developerLeaderName}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.developerLeaderEducation}</Nav.Item></td>
+            <td> <Nav.Item className="bil-form">{user.developerLeaderExperience}</Nav.Item></td> */}
             {/* <Button variant="Dark" onClick={() => onRemove(user.id)} >삭제</Button> */}
         </tr>
 
@@ -64,7 +65,7 @@ function BasicInfoList({ users, onToggle, onRemove }) {
 
                     </tr>
                 </thead>
-                < tbody >
+                < tbody>
                     {users.map(user => (
                         <User user={user} onRemove={onRemove} onToggle={onToggle} />
                     ))

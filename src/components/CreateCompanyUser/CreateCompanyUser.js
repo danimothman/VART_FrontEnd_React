@@ -1,4 +1,5 @@
 import React from 'react'
+// import { onFocus } from 'react-dom'
 import { Navbar, Button, FormControl, Nav, Form, Col, Row, Container } from 'react-bootstrap';
 import './CreateCompanyUser.css'
 function CreateCompanyUser({
@@ -10,10 +11,11 @@ function CreateCompanyUser({
     developerleadername, developerleadereducation, developerleaderexperience,
     // mkname, mklocation, mkcpdate, mkfounder,
     // milestone, movenum, mywallet,
-    onChange, onCreate
+    onChange, onCreate,
+    // onFocus,
 }) {
     return (
-        <div>
+        <div className="">
             {/* <div aria-disabled>
                 <Form.Group as={Row} controlId="" className="ccu-body-title">
                     <Form.Label column sm={3} className="">계정정보</Form.Label>
@@ -32,6 +34,7 @@ function CreateCompanyUser({
                                 placeholder="계정명"
                                 onChange={onChange}
                                 value={user}
+                                className="ccu-form-input"
                             />
                         </Col>
                     </Form.Group>
@@ -43,10 +46,27 @@ function CreateCompanyUser({
                                 placeholder="이메일"
                                 onChange={onChange}
                                 value={useremail}
+                                className="ccu-form-input"
                             />
                         </Col>
                     </Form.Group>
                 </div>
+            </div> */}
+
+
+            {/* 
+            <div id="search">
+                <form name="search" id="searching" method="post" action="">
+                    <input
+                        class="gSearch"
+                        type="search"
+                        size="60"
+                        placeholder="Google 검색 및 URL 입력"
+                        onfocus="this.placeholder=''"
+                        onblur="this.placeholder='Google 검색 및 URL 입력'"
+                        name="search"
+                    />
+                </form>
             </div> */}
 
 
@@ -69,6 +89,7 @@ function CreateCompanyUser({
                             placeholder="토큰 로고"
                             onChange={onChange}
                             value={tokenlogo}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group> */}
@@ -80,6 +101,9 @@ function CreateCompanyUser({
                             placeholder="토큰이름"
                             onChange={onChange}
                             value={tokenname}
+                            className="ccu-form-input"
+                            onfocus="this.placeholder=''"
+                            onblur="this.placeholder='토큰이름'"
                         />
                     </Col>
                 </Form.Group>
@@ -91,6 +115,7 @@ function CreateCompanyUser({
                             placeholder="프로젝트종류"
                             onChange={onChange}
                             value={projecttype}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -115,6 +140,7 @@ function CreateCompanyUser({
                             placeholder="회사이름"
                             onChange={onChange}
                             value={companyname}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -126,6 +152,7 @@ function CreateCompanyUser({
                             placeholder="회사설립일"
                             onChange={onChange}
                             value={companyestablishment}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -137,6 +164,7 @@ function CreateCompanyUser({
                             placeholder="회사위치"
                             onChange={onChange}
                             value={companylocation}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -148,6 +176,7 @@ function CreateCompanyUser({
                             placeholder="법인 관할자(Corporate jurisdiction) 위치"
                             onChange={onChange}
                             value={statejurisdiction}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -172,6 +201,7 @@ function CreateCompanyUser({
                             placeholder="경영진이름"
                             onChange={onChange}
                             value={membername}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -183,6 +213,7 @@ function CreateCompanyUser({
                             placeholder="경영진학력"
                             onChange={onChange}
                             value={membereducation}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -194,6 +225,7 @@ function CreateCompanyUser({
                             placeholder="경영진경력"
                             onChange={onChange}
                             value={memberexperience}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -218,6 +250,7 @@ function CreateCompanyUser({
                             placeholder="개발자이름"
                             onChange={onChange}
                             value={developerleadername}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -229,6 +262,7 @@ function CreateCompanyUser({
                             placeholder="개발자학력"
                             onChange={onChange}
                             value={developerleadereducation}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
@@ -240,6 +274,7 @@ function CreateCompanyUser({
                             placeholder="개발자경력"
                             onChange={onChange}
                             value={developerleaderexperience}
+                            className="ccu-form-input"
                         />
                     </Col>
                 </Form.Group>
