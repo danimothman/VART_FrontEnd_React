@@ -2,6 +2,8 @@ import React from 'react'
 // import { onFocus } from 'react-dom'
 import { Navbar, Button, FormControl, Nav, Form, Col, Row, Container } from 'react-bootstrap';
 import './CreateCompanyUser.css'
+
+
 function CreateCompanyUser({
     user, useremail,
     // tokenlogo, 
@@ -35,6 +37,12 @@ function CreateCompanyUser({
                                 onChange={onChange}
                                 value={user}
                                 className="ccu-form-input"
+                                onFocus={(e) => {
+                                    e.target.placeholder = ''
+                                }}
+                                onBlur={e => {
+                                    e.target.placeholder = '계정명'
+                                }}
                             />
                         </Col>
                     </Form.Group>
@@ -47,28 +55,17 @@ function CreateCompanyUser({
                                 onChange={onChange}
                                 value={useremail}
                                 className="ccu-form-input"
+                                onFocus={(e) => {
+                                    e.target.placeholder = ''
+                                }}
+                                onBlur={e => {
+                                    e.target.placeholder = '이메일'
+                                }}                                
                             />
                         </Col>
                     </Form.Group>
                 </div>
             </div> */}
-
-
-            {/* 
-            <div id="search">
-                <form name="search" id="searching" method="post" action="">
-                    <input
-                        class="gSearch"
-                        type="search"
-                        size="60"
-                        placeholder="Google 검색 및 URL 입력"
-                        onfocus="this.placeholder=''"
-                        onblur="this.placeholder='Google 검색 및 URL 입력'"
-                        name="search"
-                    />
-                </form>
-            </div> */}
-
 
             <div>
                 <Form.Group as={Row} controlId="" className="ccu-body-title">
@@ -86,10 +83,16 @@ function CreateCompanyUser({
                     <Col sm={9}>
                         <Form.Control
                             name="tokenLogo"
-                            placeholder="토큰 로고"
+                            placeholder="토큰로고"
                             onChange={onChange}
                             value={tokenlogo}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '토큰로고'
+                            }}                            
                         />
                     </Col>
                 </Form.Group> */}
@@ -102,8 +105,14 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={tokenname}
                             className="ccu-form-input"
-                            onfocus="this.placeholder=''"
-                            onblur="this.placeholder='토큰이름'"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '토큰이름'
+                            }}
+                        // onFocus="this.placeholder=''"
+                        // onBlur="this.placeholder='토큰이름'"
                         />
                     </Col>
                 </Form.Group>
@@ -116,6 +125,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={projecttype}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '프로젝트종류'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -141,6 +156,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={companyname}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '회사이름'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -153,6 +174,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={companyestablishment}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '회사설립일'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -165,6 +192,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={companylocation}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '회사위치'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -177,6 +210,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={statejurisdiction}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '법인 관할자 위치'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -202,6 +241,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={membername}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '경영진이름'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -214,6 +259,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={membereducation}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '경영진학력'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -226,6 +277,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={memberexperience}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '경영진경력'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -251,6 +308,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={developerleadername}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '개발자이름'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -263,6 +326,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={developerleadereducation}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '개발자학력'
+                            }}
                         />
                     </Col>
                 </Form.Group>
@@ -275,6 +344,12 @@ function CreateCompanyUser({
                             onChange={onChange}
                             value={developerleaderexperience}
                             className="ccu-form-input"
+                            onFocus={(e) => {
+                                e.target.placeholder = ''
+                            }}
+                            onBlur={e => {
+                                e.target.placeholder = '개발자경력'
+                            }}
                         />
                     </Col>
                 </Form.Group>

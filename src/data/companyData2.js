@@ -3,8 +3,8 @@ export const initialState = {
     users: [
         {
             id: 1,
-            username: "Satoshi Nakamoto",
-            email: "bitcoin@naver.com",
+            // username: "Satoshi Nakamoto",
+            // email: "bitcoin@naver.com",
             // tokenLogo: "tokenLogo",
             tokenName: "Bitcoin (BTC)",
             projectType: "국가에 속하지 않은 디지털 화폐",
@@ -23,8 +23,8 @@ export const initialState = {
     ],
 
     inputs: {
-        username: '',
-        email: '',
+        // username: '',
+        // email: '',
         // tokenLogo: '',
         tokenName: '',
         projectType: '',
@@ -44,8 +44,8 @@ export const initialState = {
 export const companyData2 = [
     {
         id: 1,
-        username: "Satoshi Nakamoto",
-        email: "bitcoin@naver.com",
+        // username: "Satoshi Nakamoto",
+        // email: "bitcoin@naver.com",
         // tokenLogo: "tokenLogo",
         tokenName: "Bitcoin (BTC)",
         projectType: "국가에 속하지 않은 디지털 화폐",

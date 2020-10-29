@@ -8,6 +8,12 @@ import { CompanyData } from './../data/companyData'
 import CreateCompanyUser from '../components/CreateCompanyUser'
 
 
+
+
+
+
+
+
 const ProjectItemCreate = ({ history }) => {
     const [users, setUsers] = useState(CompanyData)
 
@@ -165,8 +171,6 @@ const ProjectItemCreate = ({ history }) => {
                     companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
                     membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
                     developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
-                    // mkname={mkName} mklocation={mkLocation} mkcpdate={mkCpdate} mkfounder={mkFounder}
-                    // milestone={mileStone} movenum={moveNum} mywallet={myWallet}
                     onChange={onChangeInput} onCreate={onCreate} />
             </Container>
 
