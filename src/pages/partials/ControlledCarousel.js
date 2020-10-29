@@ -18,8 +18,8 @@ const ControlledCarouselBanel = ({ history }) => {
                     fluid
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>글로벌 가상자산 공시 플랫폼</h3>
+                    <p>업계를 선도하는 파트너들과 함께합니다.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -30,8 +30,8 @@ const ControlledCarouselBanel = ({ history }) => {
                     fluid
                 />
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>신뢰와 투명한 공시</h3>
+                    <p>세계속 가상자산 시장의 여명이 되겠습니다.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -42,8 +42,8 @@ const ControlledCarouselBanel = ({ history }) => {
                     fluid
                 />
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>지금 당장 이용하세요!</h3>
+                    <p>RIGHT NOW!</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
