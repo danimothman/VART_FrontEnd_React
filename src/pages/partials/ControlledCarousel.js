@@ -1,8 +1,8 @@
 
 import React, { useState, render } from 'react';
 import '../../App.css';
+import './css/CC.css'
 import '../../images/Dawn1.jpg';
-// import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
 
 import { Button, Carousel, Image } from 'react-bootstrap';
@@ -12,10 +12,11 @@ const ControlledCarouselBanel = ({ history }) => {
         <Carousel>
             <Carousel.Item>
                 <Image
-                    className=""
-                    src={require("../../images/Dawn1.jpg")}
+                    className="cc-carousel-item-image"
+                    src={require("../../images/Dawn1_1.jpg")}
+                    width="2000px"
                     alt="First slide"
-                    fluid
+                // fluid
                 />
                 <Carousel.Caption>
                     <h3>글로벌 가상자산 공시 플랫폼</h3>
@@ -24,10 +25,11 @@ const ControlledCarouselBanel = ({ history }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className=""
-                    src={require("../../images/Dawn2.gif")}
+                    className="cc-carousel-item-image"
+                    width="2000px"
+                    src={require("../../images/Dawn2_1.jpg")}
                     alt="Second slide"
-                    fluid
+                // fluid
                 />
                 <Carousel.Caption>
                     <h3>신뢰와 투명한 공시</h3>
@@ -36,10 +38,11 @@ const ControlledCarouselBanel = ({ history }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className=""
-                    src={require("../../images/Dawn3.jpg")}
+                    className="cc-carousel-item-image"
+                    width="2000px"
+                    src={require("../../images/Dawn3_1.jpg")}
                     alt="Third slide"
-                    fluid
+                // fluid
                 />
                 <Carousel.Caption>
                     <h3>지금 당장 이용하세요!</h3>

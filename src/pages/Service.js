@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import logo from '../logo.svg';
 import { Button, Card, Container } from 'react-bootstrap';
 const Service = ({ history }) => {
     return (

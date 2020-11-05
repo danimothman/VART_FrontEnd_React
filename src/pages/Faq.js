@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import logo from '../logo.svg';
 import { Button, Card, Nav, Accordion, Container } from 'react-bootstrap';
 const Faq = ({ history }) => {
     return (

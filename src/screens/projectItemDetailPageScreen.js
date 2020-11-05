@@ -109,7 +109,7 @@ function ProjectItemDetailPageScreen() {
             }
 
         }
-        fetch('https://localhost.com', {
+        fetch('http://localhost:3000/publicinfo/list', {
             method: 'POST',
             body: JSON.stringify(data)
         })

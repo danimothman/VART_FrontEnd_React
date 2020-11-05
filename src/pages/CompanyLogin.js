@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import logo from '../logo.svg';
 import { ESPIPE } from 'constants';
 import { CookieStorage } from "cookie-storage";
 import { Button, Container, Form } from 'react-bootstrap';

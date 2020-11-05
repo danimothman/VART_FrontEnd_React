@@ -1,62 +1,38 @@
 import React, { useState, useMemo, useCallback, useRef } from 'react'
 import '../App.css';
-import logo from '../logo.svg';
 import { Button, Container } from 'react-bootstrap';
-//회사 가짜 데이터 공시정보 입력경로
-import { CompanyData } from './../data/companyData'
 //공시정보 작성 경로
 import CreateCompanyUser from '../components/CreateCompanyUser'
 
 
-
-
-
-
-
-
 const ProjectItemCreate = ({ history }) => {
-    const [users, setUsers] = useState(CompanyData)
-
-
     const [inputs, setInputs] = useState({
-        username: '',
-        email: '',
         // tokenLogo: '',
         tokenName: '',
         projectType: '',
         companyName: '',
-        companyEstablishment: '',
-        companyLocation: '',
-        stateJurisdiction: '',
-        memberName: '',
-        memberEducation: '',
-        memberExperience: '',
-        developerLeaderName: '',
-        developerLeaderEducation: '',
-        developerLeaderExperience: '',
-        // mkName: '',
-        // mkLocation: '',
-        // mkCpdate: '',
-        // mkFounder: '',
-        // mileStone: '',
-        // moveNum: '',
-        // myWallet: ''
+        establishmentDate: '',
+        location: '',
+        jurisdiction: '',
+        executiveName: '',
+        executiveEducation: '',
+        executiveExperience: '',
+        developerleaderName: '',
+        developerleaderEducation: '',
+        developerleaderExperience: '',
     })
 
-    const { username, email,
+    const {
         // tokenLogo, 
         tokenName, projectType,
-        companyName, companyEstablishment, companyLocation, stateJurisdiction,
-        memberName, memberEducation, memberExperience,
-        developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-        // mkName, mkLocation, mkCpdate, mkFounder,
-        // mileStone, moveNum, myWallet
+        companyName, establishmentDate, location, jurisdiction,
+        executiveName, executiveEducation, executiveExperience,
+        developerleaderName, developerleaderEducation, developerleaderExperience,
     } = inputs
-    const nextId = useRef(4)
 
     const onChangeInput = (e) => {
         // console.log(e.target)
-        const { name, value } = e.target
+        const { value, name } = e.target
         setInputs({
             ...inputs,
             [name]: value
@@ -66,95 +42,55 @@ const ProjectItemCreate = ({ history }) => {
     //useCallback 함수를 지우고 쓰는 기능(※[비권장]해당하는 방법은 메모리를 지우고 다시 쓰는 방식으로 진행되서 메모리 효율이 좋은 편이 아님)
     const onCreate = useCallback((e) => {
         e.preventDefault();
-        const user = {
-            id: nextId.current,
-            username,
-            email,
-            // tokenLogo, 
-            tokenName, projectType,
-            companyName, companyEstablishment, companyLocation, stateJurisdiction,
-            memberName, memberEducation, memberExperience,
-            developerLeaderName, developerLeaderEducation, developerLeaderExperience,
-            // mkName, mkLocation, mkCpdate, mkFounder,
-            // mileStone, moveNum, myWallet
-        }
-        setUsers([...users, user])
+        const { value, name } = e.target;
         setInputs({
-            username: '',
-            email: '',
-            // tokenLogo: '',
-            tokenName: '',
-            projectType: '',
-            companyName: '',
-            companyEstablishment: '',
-            companyLocation: '',
-            stateJurisdiction: '',
-            memberName: '',
-            memberEducation: '',
-            memberExperience: '',
-            developerLeaderName: '',
-            developerLeaderEducation: '',
-            developerLeaderExperience: '',
-            // mkName: '',
-            // mkLocation: '',
-            // mkCpdate: '',
-            // mkFounder: '',
-            // mileStone: '',
-            // moveNum: '',
-            // myWallet: ''
+            ...inputs,
+            [name]: value
         })
 
         //=============================[JSON변환파일s]=============================
         const data = {
-            basicinfo: {
-                companyname: companyName,
-                establishment: companyEstablishment,
-                location: companyLocation,
-                statejurisdiction: stateJurisdiction
+            name: companyName,
+            establishmentDate: establishmentDate,
+            location: location,
+            jurisdiction: jurisdiction,
+            token: {
+                name: tokenName,
+                projectType: projectType
             },
-            tokenprofile: {
-                tokenname: tokenName,
-                projecttype: projectType
+            executive: {
+                name: executiveName,
+                education: executiveEducation,
+                experience: executiveExperience
             },
-            executives: {
-                name: memberName,
-                education: memberEducation,
-                experience: memberExperience
-            },
-            developerleaders: {
-                name: developerLeaderName,
-                education: developerLeaderEducation,
-                experience: developerLeaderExperience
+            developerleader: {
+                name: developerleaderName,
+                education: developerleaderEducation,
+                experience: developerleaderExperience
             }
         }
-        fetch('https://localhost.com', {
+        fetch('http://localhost:3001/publicinfo/invoke', {
             method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
             body: JSON.stringify(data)
-        })
-        // 체인코드 설정
-        // "infoKey":"Publicinfo4",
-        // basicinfo: {
-        //   companyname: "",
-        //   establishment: "",
-        //   location: "",
-        //   statejurisdiction:"", 
-        // },
-        // tokenprofile: {
-        //   tokenname: "",
-        //   projecttype:"", 
-        // },
-        // executives: {
-        //   name: "",
-        //   education: "",
-        //   experience: "",
-        // },
-        // developerleaders: {
-        //   name: "",
-        //   education: "",
-        //   experience: "",
-        //=============================[JSON변환파일e]=============================
-        nextId.current += 1
-    }, [users, inputs])
+        }).then((res) => {
+            console.log(data)
+            if (res.status == 200) {
+                history.push('./Project');
+                alert("업로드 성공")
+                console.log(value.name);
+            } else {
+                const error = new Error(res.error);
+                throw error;
+            }
+        }).catch((err) => {
+            console.log(err);
+            alert("업로드 에러")
+            console.log(value.name);
+        });
+    })
 
     return (
         <div className="App">
@@ -165,12 +101,11 @@ const ProjectItemCreate = ({ history }) => {
             </header>
             <Container>
                 <CreateCompanyUser
-                    user={username} useremail={email}
                     // tokenlogo={tokenLogo} 
-                    tokenname={tokenName} projecttype={projectType}
-                    companyname={companyName} companyestablishment={companyEstablishment} companylocation={companyLocation} statejurisdiction={stateJurisdiction}
-                    membername={memberName} membereducation={memberEducation} memberexperience={memberExperience}
-                    developerleadername={developerLeaderName} developerleadereducation={developerLeaderEducation} developerleaderexperience={developerLeaderExperience}
+                    tokenName={tokenName} projectType={projectType}
+                    companyName={companyName} establishmentDate={establishmentDate} location={location} jurisdiction={jurisdiction}
+                    executiveName={executiveName} executiveEducation={executiveEducation} executiveExperience={executiveExperience}
+                    developerleaderName={developerleaderName} developerleaderEducation={developerleaderEducation} developerleaderExperience={developerleaderExperience}
                     onChange={onChangeInput} onCreate={onCreate} />
             </Container>
 

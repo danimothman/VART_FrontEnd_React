@@ -1,9 +1,7 @@
 import React, { useState, render } from 'react';
 import '../App.css';
-import logo from '../logo.svg';
 import ProjectItemScreen from '../screens/ProjectItemScreen'
 import ControlledCarousel from '../pages/partials/ControlledCarousel'
-// import logo from './logo.svg';
 // import TutorLogin from "./components/TutorLogin";
 
 import { Button, Carousel, Container } from 'react-bootstrap';

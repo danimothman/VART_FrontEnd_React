@@ -5,68 +5,15 @@ import './CreateCompanyUser.css'
 
 
 function CreateCompanyUser({
-    user, useremail,
     // tokenlogo, 
-    tokenname, projecttype,
-    companyname, companyestablishment, companylocation, statejurisdiction,
-    membername, membereducation, memberexperience,
-    developerleadername, developerleadereducation, developerleaderexperience,
-    // mkname, mklocation, mkcpdate, mkfounder,
-    // milestone, movenum, mywallet,
+    tokenName, projectType,
+    companyName, establishmentDate, location, jurisdiction,
+    executiveName, executiveEducation, executiveExperience,
+    developerleaderName, developerleaderEducation, developerleaderExperience,
     onChange, onCreate,
-    // onFocus,
 }) {
     return (
         <div className="">
-            {/* <div aria-disabled>
-                <Form.Group as={Row} controlId="" className="ccu-body-title">
-                    <Form.Label column sm={3} className="">계정정보</Form.Label>
-                    <Col sm={9}>
-                        <Form.Text>
-
-                        </Form.Text>
-                    </Col>
-                </Form.Group>
-                <div className="ccu-body">
-                    <Form.Group as={Row} controlId="formBasicEmail" className="">
-                        <Form.Label column sm={3} className="ccu-form-label">계정명</Form.Label>
-                        <Col sm={9}>
-                            <Form.Control
-                                name="username"
-                                placeholder="계정명"
-                                onChange={onChange}
-                                value={user}
-                                className="ccu-form-input"
-                                onFocus={(e) => {
-                                    e.target.placeholder = ''
-                                }}
-                                onBlur={e => {
-                                    e.target.placeholder = '계정명'
-                                }}
-                            />
-                        </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="">
-                        <Form.Label column sm={3} className="ccu-form-label">이메일</Form.Label>
-                        <Col sm={9}>
-                            <Form.Control
-                                name="email"
-                                placeholder="이메일"
-                                onChange={onChange}
-                                value={useremail}
-                                className="ccu-form-input"
-                                onFocus={(e) => {
-                                    e.target.placeholder = ''
-                                }}
-                                onBlur={e => {
-                                    e.target.placeholder = '이메일'
-                                }}                                
-                            />
-                        </Col>
-                    </Form.Group>
-                </div>
-            </div> */}
-
             <div>
                 <Form.Group as={Row} controlId="" className="ccu-body-title">
                     <Form.Label column sm={3} className="">토큰정보</Form.Label>
@@ -78,6 +25,7 @@ function CreateCompanyUser({
                 </Form.Group>
             </div>
             <div className="ccu-body">
+
                 {/* <Form.Group as={Row} controlId="">
                     <Form.Label column sm={3} className="ccu-form-label">토큰로고</Form.Label>
                     <Col sm={9}>
@@ -103,7 +51,7 @@ function CreateCompanyUser({
                             name="tokenName"
                             placeholder="토큰이름"
                             onChange={onChange}
-                            value={tokenname}
+                            value={tokenName}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -111,8 +59,6 @@ function CreateCompanyUser({
                             onBlur={e => {
                                 e.target.placeholder = '토큰이름'
                             }}
-                        // onFocus="this.placeholder=''"
-                        // onBlur="this.placeholder='토큰이름'"
                         />
                     </Col>
                 </Form.Group>
@@ -123,7 +69,7 @@ function CreateCompanyUser({
                             name="projectType"
                             placeholder="프로젝트종류"
                             onChange={onChange}
-                            value={projecttype}
+                            value={projectType}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -138,7 +84,7 @@ function CreateCompanyUser({
 
             <div>
                 <Form.Group as={Row} controlId="" className="ccu-body-title">
-                    <Form.Label column sm={3} className="">공시정보</Form.Label>
+                    <Form.Label column sm={3} className="">회사정보</Form.Label>
                     <Col sm={9}>
                         <Form.Text>
 
@@ -154,7 +100,7 @@ function CreateCompanyUser({
                             name="companyName"
                             placeholder="회사이름"
                             onChange={onChange}
-                            value={companyname}
+                            value={companyName}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -169,10 +115,10 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">회사설립일</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="companyEstablishment"
+                            name="establishmentDate"
                             placeholder="회사설립일"
                             onChange={onChange}
-                            value={companyestablishment}
+                            value={establishmentDate}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -187,10 +133,10 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">회사위치</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="companyLocation"
+                            name="location"
                             placeholder="회사위치"
                             onChange={onChange}
-                            value={companylocation}
+                            value={location}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -205,10 +151,10 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">법인 관할자 위치</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="stateJurisdiction"
+                            name="jurisdiction"
                             placeholder="법인 관할자(Corporate jurisdiction) 위치"
                             onChange={onChange}
-                            value={statejurisdiction}
+                            value={jurisdiction}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -236,10 +182,10 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">경영진이름</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="memberName"
+                            name="executiveName"
                             placeholder="경영진이름"
                             onChange={onChange}
-                            value={membername}
+                            value={executiveName}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -254,10 +200,10 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">경영진학력</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="memberEducation"
+                            name="executiveEducation"
                             placeholder="경영진학력"
                             onChange={onChange}
-                            value={membereducation}
+                            value={executiveEducation}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -272,10 +218,11 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">경영진경력</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="memberExperience"
+
+                            name="executiveExperience"
                             placeholder="경영진경력"
                             onChange={onChange}
-                            value={memberexperience}
+                            value={executiveExperience}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -302,11 +249,13 @@ function CreateCompanyUser({
                 <Form.Group as={Row} controlId="">
                     <Form.Label column sm={3} className="ccu-form-label">개발자이름</Form.Label>
                     <Col sm={9}>
+
+
                         <Form.Control
-                            name="developerLeaderName"
+                            name="developerleaderName"
                             placeholder="개발자이름"
                             onChange={onChange}
-                            value={developerleadername}
+                            value={developerleaderName}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -320,11 +269,12 @@ function CreateCompanyUser({
                 <Form.Group as={Row} controlId="">
                     <Form.Label column sm={3} className="ccu-form-label">개발자학력</Form.Label>
                     <Col sm={9}>
+
                         <Form.Control
-                            name="developerLeaderEducation"
+                            name="developerleaderEducation"
                             placeholder="개발자학력"
                             onChange={onChange}
-                            value={developerleadereducation}
+                            value={developerleaderEducation}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''
@@ -339,10 +289,10 @@ function CreateCompanyUser({
                     <Form.Label column sm={3} className="ccu-form-label">개발자경력</Form.Label>
                     <Col sm={9}>
                         <Form.Control
-                            name="developerLeaderExperience"
+                            name="developerleaderExperience"
                             placeholder="개발자경력"
                             onChange={onChange}
-                            value={developerleaderexperience}
+                            value={developerleaderExperience}
                             className="ccu-form-input"
                             onFocus={(e) => {
                                 e.target.placeholder = ''

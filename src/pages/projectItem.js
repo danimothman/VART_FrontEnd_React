@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import logo from '../logo.svg';
 import { Button, Container } from 'react-bootstrap';
 import ProjectItemDetailPageScreen from '../screens/projectItemDetailPageScreen';
 const ProjectItem = ({ history }) => {
