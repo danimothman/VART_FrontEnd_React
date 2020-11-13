@@ -10,7 +10,7 @@ function ProjectItemScreen({ history }) {
     users.sort(function (a, b) {
         return a.Token.name < b.Token.name ? -1 : a.Token.name > b.Token.name ? 1 : 0;
     })
-
+    //임시로 막음
     // const fetchUserList = useCallback(() => {
 
     //     return fetch('http://localhost:3001/publicinfo/list', {
